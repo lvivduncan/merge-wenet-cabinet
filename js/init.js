@@ -51,10 +51,18 @@ if (localStorage.getItem('logo') !== null){
 
 // select city
 document.querySelectorAll('.cities li a').forEach(item => {
-    item.addEventListener('click', function(){
+    item.addEventListener('click', function(e){
 
         // city name
         const cityName = this.innerText;
+
+        // tmp
+        e.preventDefault();
+        document.cookie = `city=${cityName}`;
+
+        console.log(document.cookie)
+        // tmp
+
 
         // link to page
         const cityLink = this.href;
@@ -84,6 +92,8 @@ document.querySelectorAll('.cities li a').forEach(item => {
         document.querySelector('#logo a').setAttribute('href', cityLink);
     });
 });
+
+
 
 
 // горизонтальний блок меню (мобільний -- збоку)
