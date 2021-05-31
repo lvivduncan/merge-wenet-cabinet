@@ -3,7 +3,7 @@
 
 /* логін, баланс, дата */
 #user{
-    margin: 0 15px;
+    margin: 15px 15px 0;
     padding: 10px;
     border-radius: 5px;
     display: grid;
