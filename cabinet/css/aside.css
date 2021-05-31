@@ -15,8 +15,6 @@
 @media(max-width: 996px){
     #sidebar-menu{
         padding: 15px 0;
-        /* width: 320px; */
-        /* margin: auto 10px; */
     }
 }
 
@@ -131,4 +129,19 @@
     right: 0;
     z-index: 8;
     background: rgba(0,0,0, .5)
+}
+
+/* кнопка "увійти" на мобільному */
+#enter{
+    margin: 0 15px;
+    padding: 10px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    text-decoration: none;
+}
+
+#enter button{
+    margin: 0;
 }
