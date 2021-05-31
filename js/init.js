@@ -139,6 +139,7 @@ sidebarBackground.addEventListener('click', () => {
 
     // для краси =)
     sidebarBackground.remove();
+    body.classList.remove('lock');
 
     flag = false;
 });
