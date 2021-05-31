@@ -38,14 +38,13 @@
 }
 
 body{
-    /* font-family: "Montserrat", sans-serif; */
-    font-size: 14px;
     color: var(--black);
     line-height: normal;
 }
 
 /* основний блок кабінету */
 #cabinet{
+    font-size: 14px;
     width: 1170px;
     margin: auto;
     display: grid;
