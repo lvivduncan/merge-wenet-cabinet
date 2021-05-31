@@ -1,0 +1,163 @@
+/* окрема сторінка */
+#faq{
+    padding: 20px 0 60px;
+    position: relative;
+}
+
+#faq::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* фон має бути вставлений з адмінки */
+    background-position: center top!important;
+    background-size: 100% 100%!important;
+}
+
+#faq h1 {
+    margin: 20px 20px 40px;
+    text-align: center;
+    color: var(--black);
+    position: relative;
+    z-index: 1;
+    line-height: 1.3;
+    font-size: 28px;
+}
+
+#faq .wrap{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-gap: 30px;
+}
+
+@media(max-width:776px) {
+    #faq .wrap{
+        grid-template-columns: 1fr;
+    }   
+}
+
+/* перелік */
+#faq .wrap aside{
+    background: var(--white-light);
+    box-shadow: 0 3px 1px -2px rgb(159 193 212 / 30%), 0 2px 2px 0 rgb(159 193 212 / 24%), 0 1px 5px 0 rgb(159 193 212 / 22%);
+
+    padding: 10px;    
+    border-radius: 5px;
+    border: 1px solid var(--gray-light);
+}
+
+@media(max-width:776px) {
+    #faq .wrap aside{
+        display: none;
+    }
+}
+
+#faq img{
+    vertical-align: middle;
+}
+
+#faq ul,
+#faq ol{
+    margin: 0 0 0 40px;
+}
+
+#faq li{
+    margin: 10px 0;
+}
+
+#faq li a{
+    margin: 0 0 0 5px;
+    display: inline-flex;
+}
+
+/* питання-відповідь */
+#faq-content dl{
+    border-radius: 5px;
+    border: 1px solid var(--gray-light);
+    padding: 12px 10px;
+    margin: 30px 0 0;
+    background: var(--white-light);
+    box-shadow: 0 3px 1px -2px rgb(159 193 212 / 30%), 
+        0 2px 2px 0 rgb(159 193 212 / 24%), 
+        0 1px 5px 0 rgb(159 193 212 / 22%);
+}
+
+#faq-content dl:first-child{
+    margin:0;
+}
+
+/* question */
+#faq-content dt{
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    user-select: none;
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+    padding: 5px 0 5px 20px;
+    margin: 0 0 10px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234a9ad5'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 20px 20px;
+    cursor: pointer;
+    transition: background .5s;
+}
+
+#faq-content dt::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--gray);
+    display: block;
+    border-radius: 5px;
+}
+
+#faq-content dt svg {
+    width: 22px;
+    height: 22px;
+}
+
+#faq-content dt.active{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234a9ad5'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+}
+
+#faq-content dt.active::before {
+    background: var(--cyan);
+}
+
+/* answer */
+#faq-content dd{
+    display: none;
+    padding: 20px;
+}
+
+#faq-content dd.active{
+    display: block;
+}
+
+/* вкладені */
+#faq-content .faq-inner {
+    margin: 0 -20px -20px!important;
+    border-color: var(--white);
+    padding: 6px 6px 0;
+}
+
+#faq-content .faq-inner + .faq-inner{
+    margin-top: 40px!important;
+}
+
+#faq-content .faq-inner dt{
+    display: block;
+    background: none;
+    font-weight: normal;
+}

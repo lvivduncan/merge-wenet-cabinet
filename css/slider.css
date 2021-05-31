@@ -1,0 +1,130 @@
+#slider {
+    min-height: 350px;
+    background: url('../images/slider.png') repeat;
+    padding: 50px 0;
+    margin: 0 0 40px;
+}
+
+@media(max-width:776px) {
+    #slider {
+        min-height: 250px;
+        padding: 20px 0;
+    }
+}
+
+#slider .wrap{
+    display: block;
+}
+
+/* слайд розділяємо на 2 нерівні частини */
+#slider .item{
+    cursor: move;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    grid-gap: 20px;
+    font-size: 22px;
+    width: 1170px;
+    margin: auto;
+}
+
+@media(max-width:1200px) {
+    #slider .item{
+        width: 95%;
+    }
+}
+
+@media(max-width:776px) {
+    #slider .item{
+        grid-template-columns: 1fr;
+    }
+}
+
+#slider h1 {
+    font-size: 100px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+@media(max-width:776px) {
+    #slider h1 {
+        font-size: 50px;
+    }
+}
+
+#slider h2 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+@media(max-width:776px) {
+    #slider h2 {
+        font-size: 30px;
+    }
+}
+
+#slider h3 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+@media(max-width:776px) {
+    #slider h3 {
+        font-size: 25px;
+    }
+}
+
+#slider h4 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+@media(max-width:776px) {
+    #slider h4 {
+        font-size: 20px;
+    }
+}
+
+#slider strong {
+    color: var(--green);
+    font-weight: 800;
+    font-size: 60px;
+}
+
+@media(max-width:776px) {
+    #slider strong {
+        font-size: 30px;
+    }
+}
+
+#slider small {
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+#slider em {
+    color: var(--red);
+    font-style: normal;
+}
+
+#slider cite {
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+#slider a{
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: var(--cyan);
+    color: var(--white-light);
+    text-align: center;
+    text-decoration: none;
+    transition: .5s;
+}
+
+#slider a:hover{
+    background: var(--cyan-dark);
+}

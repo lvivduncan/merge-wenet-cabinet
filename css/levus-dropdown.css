@@ -1,0 +1,51 @@
+
+/* випадачка */
+/* основна обгортка */
+.levus-dropdown{
+    position: relative;
+    z-index: 5;
+}
+
+/* схований блок */
+.levus-dropdown-content{
+    position: absolute;
+    right: 0;
+    z-index: 9;
+    width: 290px;
+    padding: 10px;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
+    background: var(--gray-lightly);
+    margin: 30px 0 0;
+    font-size: 14px;
+    display: none;
+}
+
+@media(max-width: 420px) {
+    .levus-dropdown-content{
+        position: fixed;
+        right: calc(50% - 145px);
+    }
+}
+
+.levus-dropdown .levus-dropdown-content.open{    
+    display: block;
+}
+
+.levus-dropdown-content h5{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* обгортка для цілої сторінки */
+#levus-dropdown-wrapper{
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}

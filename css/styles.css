@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic");
+
+@import url('./root.css');
+
+@import url('./header.css');
+
+@import url('./nav.css');
+
+@import url('./levus-dropdown.css');
+
+@import url('./services.css');
+
+@import url('./slider.css');
+
+@import url('./levus-swipe-slider.css');
+
+@import url('./page.css');
+
+@import url('./faq.css');
+
+@import url('./rates.css');
+
+@import url('./rate.css');
+
+@import url('./articles.css');
+
+@import url('./pagination.css');
+
+@import url('./footer.css');
+
+@import url('./copy.css');
+
+@import url('./keyframes.css');
+
+@import url('./inputs.css');
+
+@import url('./tv.css');
+
+/* include /cabinet/ */
+@import url('../cabinet/css/styles.css');
+
+/* todo: chat */

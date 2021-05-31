@@ -1,0 +1,30 @@
+
+/* @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic"); */
+
+@import url('./root.css');
+
+@import url('./content.css');
+
+/* статуси */
+@import url('./user.css');
+
+/* сайдбар */
+@import url('./aside.css');
+
+/* основна шпальта */
+@import url('./main.css');
+
+/* кнопка редагування */
+@import url('./edit.css');
+
+/* стилізація чекбоксів, селектів, інпутів */
+@import url('./inputs.css');
+
+/* лайтбокс */
+@import url('./jquery.fancybox.min.css');
+
+/* модальне вікно */
+@import url('./approuve.css');
+
+/* табличні дані */
+@import url('./table.css');

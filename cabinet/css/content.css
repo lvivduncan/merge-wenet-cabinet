@@ -1,0 +1,10 @@
+/* блок з інфою (і асайд, і мейн) */
+#content{
+    padding: 20px 0 60px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
+    background-color: var(--white-light);
+
+
+    background: url('../temp/bg.jpg') center center no-repeat;
+    background-size: 100% auto!important;
+}

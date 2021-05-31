@@ -1,0 +1,215 @@
+
+/* верхня смуга */
+#header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: var(--white-light);
+    z-index: 9;
+    border-bottom: 1px solid var(--gray);  
+}
+
+#header .wrap{
+    height: 70px;
+    display: grid;
+    grid-template-columns: 240px auto;
+    align-items: center;
+}
+
+@media(max-width:450px) {
+    #header .wrap{
+        grid-template-columns: 100px auto;
+        height: 55px;
+    }
+
+    #logo img{
+        height: 40px;
+    }
+}
+
+/* ліве меню (контакти, юзер, карта) */
+#nav-panel{
+    margin: 0 0 0 auto;
+    display: flex;
+}
+
+#nav-panel ul{
+    display: flex;
+}
+
+#nav-panel li{
+    display: block;
+    margin-left: 10px;
+}
+
+#nav-panel a,
+#nav-panel .nav-panel{
+    color: var(--dark);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    z-index: 8;
+    user-select: none;
+    transition: color .5s;
+}
+
+#nav-panel a:hover,
+#nav-panel .nav-panel:hover{
+    color: var(--cyan)
+}
+
+#nav-panel svg{
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: var(--purpur);
+    stroke-width: 2; 
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    margin: 0 0 0 10px;
+    transition: stroke .5s;
+}
+
+@media(max-width:996px) {
+    #nav-panel svg{
+        margin: 0;
+    }
+}
+
+#nav-panel .nav-panel:hover svg{
+    stroke: var(--cyan);
+}
+
+@media(max-width:996px) {
+    #nav-panel span{
+        display: none;
+    }
+    #nav-panel .levus-dropdown-content .cities li span{
+        display: flex;
+    }
+}
+
+/* мобільна кнопка */
+#menu-button{
+    display: none!important;
+}
+
+@media(max-width: 996px) {
+    #menu-button{
+        display: inline-flex!important;
+    }
+    #menu-button a{
+        text-indent: -9999px;
+        width: 24px;
+        height: 24px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='%23ae5cfe'%3E%3Crect height='2' width='20' y='2' x='2'/%3E%3Crect height='2' width='20' y='11' x='2'/%3E%3Crect height='2' width='20' y='20' x='2'/%3E%3C/g%3E%3C/svg%3E");
+    }
+    #menu-button.open a{
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg stroke-width='2' fill='none'%3E%3Cpath stroke='%23ae5cfe' d='m22.25,22.125l-20.125,-20.125'/%3E%3Cpath stroke='%23ae5cfe' d='m22.25,1.75l-20.4375,20.4375'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+}
+
+/* контент у випадачці */
+/* city*/
+#nav-panel .levus-dropdown-content .cities{
+    margin: 20px 0;
+}
+
+#nav-panel .levus-dropdown-content .cities li{
+    margin: 30px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#nav-panel .levus-dropdown-content .cities li.active a,
+#nav-panel .levus-dropdown-content .cities li.active svg{
+    color: var(--cyan);
+    fill: var(--cyan);
+}
+
+#nav-panel .levus-dropdown-content .cities li a{
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+#nav-panel .levus-dropdown-content svg{
+    width: 22px;
+    height: 22px;
+    fill: var(--dark);
+    position: absolute;
+    right: 0;
+    top: -5px;
+    transition: .5s;
+}
+
+#nav-panel .levus-dropdown-content .cities li:hover svg{
+    fill: var(--cyan);
+}
+
+#nav-panel .levus-dropdown-content .cities li:hover a{
+    color: var(--cyan);
+}
+/* city*/
+
+#nav-panel .levus-dropdown-content p{
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+#nav-panel .levus-dropdown-content ul,
+#nav-panel .levus-dropdown-content ol{
+    display: block;
+}
+
+#nav-panel .levus-dropdown-content li{
+    display: block;
+    margin: 5px 0
+}
+
+#nav-panel .levus-dropdown-content form{
+    display: flex;
+    flex-flow: column;
+}
+
+#nav-panel .levus-dropdown-content label{
+    cursor: pointer;
+}
+
+#nav-panel .levus-dropdown-content a{
+    font-size: 12px;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+/* телефони */
+.phones{
+    display: none;
+}
+
+.phones.open{
+    display: block;
+}
+
+/* розклад */
+#shedule{
+    text-align: center;
+}
+
+.shedule{
+    display: none;
+}
+
+.shedule.open{
+    display: inline-block;
+}
+
+/* todo: .phones & .shedule -- del! */

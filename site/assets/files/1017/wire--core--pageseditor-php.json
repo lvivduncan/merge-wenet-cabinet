@@ -1,0 +1,12 @@
+{
+    "file": "wire\\core\\PagesEditor.php",
+    "textdomain": "wire--core--pageseditor-php",
+    "translations": {
+        "9ba12390dc16d0bb6b897e136830b4e4": {
+            "text": "\u0421\u0442\u043e\u0440\u0456\u043d\u043a\u0430 \u0431\u0435\u0437 \u043d\u0430\u0437\u0432\u0438"
+        },
+        "f7b20059533e8267e92eecda0b6eee8e": {
+            "text": "\u041f\u043e\u043c\u0438\u043b\u043a\u0430 \u0437\u0431\u0435\u0440\u0435\u0436\u0435\u043d\u043d\u044f \u043f\u043e\u043b\u044f \"%s\""
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "file": "wire\\core\\Sanitizer.php",
+    "textdomain": "wire--core--sanitizer-php",
+    "translations": {
+        "47ad5a71e6f7bf836f4626d67887707e": {
+            "text": "URL: \u0421\u0445\u0435\u043c\u0430 \u201c%s\u201d \u043d\u0435 \u0434\u043e\u043f\u0443\u0441\u043a\u0430\u0454\u0442\u044c\u0441\u044f."
+        }
+    }
+}

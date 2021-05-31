@@ -1,0 +1,15 @@
+{
+    "file": "wire\\modules\\Fieldtype\\FieldtypeComments\\CommentStars.php",
+    "textdomain": "wire--modules--fieldtype--fieldtypecomments--commentstars-php",
+    "translations": {
+        "7f2c246a58dea4b3d225a732d148bb77": {
+            "text": "%1$s (%2$s \u0440\u0435\u0439\u0442\u0438\u043d\u0433)"
+        },
+        "a703ceef52794d67771f47104f17aed3": {
+            "text": "%1$s (%2$s \u0440\u0435\u0439\u0442\u0438\u043d\u0433\u0438)"
+        },
+        "3f1364f18e39ca42bc8ca13b66249698": {
+            "text": "\u0431\u0435\u0437 \u0440\u0435\u0439\u0442\u0438\u043d\u0433\u0443"
+        }
+    }
+}

@@ -1,0 +1,212 @@
+/* сторінка окремого тарифа */
+#rate{
+    padding: 20px 0 60px;
+    position: relative;
+}
+
+#rate::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* фон має бути вставлений з адмінки */
+    background-position: center top!important;
+    background-size: 100% 100%!important;
+}
+
+/* заголовок */
+#rate h1{
+    margin: 20px 20px 0;
+    text-align: center;
+    color: var(--black);
+    font-size: 28px;
+}
+
+/* підпис під заголовком */
+#rate > p{
+    margin: 0 0 40px;
+    text-align: center;
+}
+
+#rate .wrap{
+    flex-flow: column;
+}
+
+/* //////////// 
+1 блок -- форма
+//////////// */
+#rate-form{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px 30px;
+    align-items: center;
+    justify-content: center;
+    width: 100%
+}
+
+@media(max-width: 776px) {
+    #rate-form{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width: 400px) {
+    #rate-form{
+        grid-template-columns: 1fr;
+    }
+}
+
+#rate-form p{
+    text-align: center;
+    font-size: 14px;
+}
+
+@media(max-width:400px) {
+    #rate-form p{
+        margin: 0;
+    }
+}
+
+/* назва тарифа */
+#rate-form strong{
+    display: block;
+    color: var(--cyan);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0 0 5px;
+}
+
+#rate-form span {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+/* підпис до поля */
+#rate-form label span{
+    font-size: inherit;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+@media(max-width:400px) {
+    #rate-form label span{
+        display: none;
+    }
+}
+
+/* //////////////////
+пропозиції та додатки 
+////////////////// */
+#rate-adds{
+    display: flex;
+    margin: 30px 0
+}
+
+@media(max-width: 776px) {
+    #rate-adds{
+        display: block;
+    }
+}
+
+#rate-adds aside{
+    flex: 1;
+    border-left: 1px solid var(--black-light);
+}
+
+@media(max-width:776px) {
+    #rate-adds aside{
+        border: none;
+    }   
+}
+
+#rate-adds aside:first-child{
+    border: none;
+}
+
+/* заголовок блоку */
+#rate h3,
+#rate h4{
+    text-align: center;
+    font-size: 18px;
+}
+
+@media(max-width:776px) {
+    #rate h3,
+    #rate h4{
+        margin: 20px 0;
+    }
+}
+
+#rate-adds article{
+    display: grid;
+    grid-template-columns: 60px auto 60px;
+    grid-gap: 10px;
+    align-items: center;
+    padding: 0 10px;
+}
+
+@media(max-width:776px) {
+    #rate-adds article{
+        padding: 0
+    }
+}
+
+/* назва пропозиції */
+#rate-adds h5{
+    font-size: 12px;
+    font-weight: 700;
+    padding-top: 10px;
+    line-height: 1.3;
+}
+
+#rate-adds h5 span{
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--black-light);
+    margin: 5px 0 0
+}
+
+/* //////////////////////
+текстова інформація внизу
+////////////////////// */
+#rate-desc{
+    font-size: 14px;
+}
+
+#rate-desc p{
+    margin: 0 0 30px;
+    text-align: justify;
+}
+
+#rate-desc hr{
+    border-top: 1px solid var(--cyan);
+    margin: 30px 0;
+}
+
+/* /////////////
+кнопка відправки 
+///////////// */
+#rate-submit{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+#rate-submit input[type="submit"]{
+    width: 30%;
+}
+
+@media(max-width:400px) {
+    #rate-submit input[type="submit"]{
+        width: 100%
+    }   
+}

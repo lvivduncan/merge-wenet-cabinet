@@ -1,0 +1,21 @@
+{
+    "file": "wire\\modules\\AdminTheme\\AdminThemeDefault\\AdminThemeDefault.module",
+    "textdomain": "wire--modules--admintheme--adminthemedefault--adminthemedefault-module",
+    "translations": {
+        "f0a5fc96d36fdda66a2a10b79be6d7fb": {
+            "text": "\u041d\u0430\u0431\u0456\u0440 \u043a\u043e\u043b\u044c\u043e\u0440\u0456\u0432"
+        },
+        "d35b51b639528d580362ca7042de6a0e": {
+            "text": "\u041a\u043b\u0430\u0441\u0438\u0447\u043d\u0438\u0439"
+        },
+        "18297117d3d251afceed9ecbe797c849": {
+            "text": "\u0422\u0435\u043f\u043b\u0438\u0439"
+        },
+        "ad1c9cd3e7b07e2c364c985f73188054": {
+            "text": "\u041c\u043e\u0434\u0435\u0440\u043d\u043e\u0432\u0438\u0439"
+        },
+        "e23718b506da0770a65d60f908e449a7": {
+            "text": "\u0424\u0443\u0442\u0443\u0440\u0438\u0441\u0442\u0438\u0447\u043d\u0438\u0439"
+        }
+    }
+}

@@ -1,0 +1,20 @@
+#copy {
+    background: var(--black);
+    color: var(--gray-light);
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+#copy .wrap {
+    justify-content: center;
+}
+
+@media (max-width: 992px) {
+    #copy .wrap {
+        width: 95%;
+    }
+}
+
+#copy p {
+    margin: 0;
+}

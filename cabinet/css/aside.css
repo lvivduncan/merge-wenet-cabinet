@@ -1,0 +1,134 @@
+
+
+/* ліве меню */
+#sidebar-menu{
+    /* padding: 15px 0; */
+    border-radius: 5px;
+    border: 1px solid var(--gray-light);
+    background: var(--white-light);
+    box-shadow: 
+        0 3px 1px -2px rgb(159 193 212 / 30%), 
+        0 2px 2px 0 rgb(159 193 212 / 24%), 
+        0 1px 5px 0 rgb(159 193 212 / 22%);
+}
+
+@media(max-width: 996px){
+    #sidebar-menu{
+        padding: 15px 0;
+        /* width: 320px; */
+        /* margin: auto 10px; */
+    }
+}
+
+@media(max-width:450px){
+    #sidebar-menu{
+        width: auto;
+    }
+}
+
+/* іконка зліва */
+.aside-icon{
+    padding: 10px!important;
+    height: auto!important;
+    margin: 0;
+    text-align: center;
+    position: relative;
+}
+
+.aside-icon svg{
+    width: 24px;
+    height: 24px;
+    fill: var(--black);
+}
+
+/* колір іконок */
+.aside-icon .status.red svg{
+    fill: var(--red)
+}
+
+.aside-icon .status.green svg{
+    fill: var(--green)
+}
+
+.aside-icon .status.black svg{
+    fill: var(--black)
+}
+
+/* синя плашка */
+#sticked{
+    margin: 20px -3px;
+    padding: 10px 20px;
+    background: var(--blue);
+    color: var(--white-light);
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 
+        0 2px 1px rgb(0 0 0 / 13%), 
+        0 -2px 1px rgb(0 0 0 / 13%);
+    transition: .5s;
+}
+
+#sticked:hover{
+    background: var(--cyan-dark);
+}
+
+#sticked svg{
+    fill: var(--white-light);
+    width: 26px;
+    height: 26px;
+}
+
+/* меню */
+#sidebar-menu ul,
+#sidebar-menu li{
+    display: block;
+}
+
+#sidebar-menu li a{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--black);
+    padding: 0 5px;
+    margin: 0 15px;
+    line-height: 1;
+    transition: .1s;
+}
+
+#sidebar-menu li a:hover,
+#sidebar-menu li a.active{
+    background: var(--gray-light);
+    border-radius: 5px;
+}
+
+#sidebar-menu li span{
+    position: relative;
+}
+
+/* кількість справа */
+#sidebar-menu li span b{
+    position: absolute;
+    top: -5px;
+    right: 0;
+    background: var(--blue);
+    color: var(--white);
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px 4px;
+    font-size: 12px;
+}
+
+/* враппер для фону */
+#sidebar-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 8;
+    background: rgba(0,0,0, .5)
+}

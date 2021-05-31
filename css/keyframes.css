@@ -1,0 +1,23 @@
+@keyframes progress {
+    0%{
+        background: var(--white-light);
+    }
+    100%{
+        background: var(--green-light);
+    }
+}
+
+@keyframes progress-reverse {
+    0%{
+        background: var(--green-light);
+    }
+    25%{
+        background: var(--green-light);
+    }
+    30%{
+        background: var(--white-light);
+    }
+    100%{
+        background: var(--white-light);
+    }
+}

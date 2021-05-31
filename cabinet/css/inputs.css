@@ -1,0 +1,277 @@
+.checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 20px;
+}
+
+.checkbox + label {
+	position: relative;
+	padding: 0 0 0 60px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.checkbox + label:before {
+	content: '';
+	position: absolute;
+	top: -4px;
+	left: 0;
+	width: 50px;
+	height: 26px;
+	border-radius: 13px;
+	background: var(--gray-light);
+	box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+	transition: .2s;
+}
+
+.checkbox + label:after {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: 2px;
+	width: 22px;
+	height: 22px;
+	border-radius: 10px;
+	background: var(--white-light);
+	box-shadow: 0 2px 5px rgba(0,0,0,.3);
+	transition: .2s;
+}
+
+.checkbox:checked + label:before {
+	background: var(--blue);
+}
+
+.checkbox:checked + label:after {
+	left: 26px;
+}
+
+.checkbox:focus + label:before {
+	box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+}
+
+.radio {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 7px;
+}
+
+.radio + label {
+	position: relative;
+	padding: 0 0 0 35px;
+	cursor: pointer;
+}
+
+.radio + label:before {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: 0;
+	width: 22px;
+	height: 22px;
+	border: 1px solid var(--gray-light);
+	border-radius: 50%;
+	background: var(--white);
+}
+
+.radio + label:after {
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: 4px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: var(--blue);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+	opacity: 0;
+	transition: .2s;
+}
+
+.radio:checked + label:after {
+	opacity: 1;
+}
+
+.radio:focus + label:before {
+	box-shadow: 0 0 0 3px var(--yellow);
+}
+
+.inputs{
+    margin: 20px;
+}
+
+.inputs p{
+    margin: 10px 0!important;
+}
+
+select {
+	display: block;
+	width: 100%;
+	padding: .375rem 1.75rem .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	font-family: inherit;
+    font-size: inherit;
+	line-height: 1.5;
+	color: var(--gray-dark);
+	background-color: var(--white-light);
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234a9ad5'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right .75rem center;
+	background-size: 20px 20px;
+	border: 1px solid var(--gray-light);
+	border-radius: .25rem;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	cursor: pointer;
+}
+
+
+/* обгортка для селект-дати */
+.selects{
+	position: relative;
+}
+
+/* селект для дати */
+.select-date{
+	display: block;
+	width: 100%;
+	height: 38px;
+	padding: .375rem 1.75rem .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: var(--black);
+	background-color: var(--white-light);
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234a9ad5'%3E%3Cpath d='M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z'/%3E%3Cpath d='M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right .75rem center;
+	background-size: 20px 20px;
+	border: 1px solid var(--gray-light);
+	border-radius: .25rem;
+	cursor: pointer;
+	user-select: none;
+}
+
+/* блок, який з'являється */
+.select-calendar{
+	display: none;
+	position: absolute;
+	bottom:100%;
+	left:0;
+	width: calc(100% - 10px);
+	background: var(--white-light);
+	border: 1px solid var(--gray-light);
+	border-radius: 5px;
+	margin-left: 10px;
+	padding: 10px;
+}
+
+.select-calendar.active{
+	display: block;
+}
+
+@media(max-width: 540px){
+	.select-calendar.active{
+		margin: 0;
+		width: 100%;
+	}
+}
+
+/* календар */
+.calendar{
+	display: none;
+	user-select: none;
+}
+
+.calendar.active{
+	display: grid;
+	grid-template-columns: repeat(7,1fr);
+}
+
+.calendar > span{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--blue);
+	height: 32px;
+	text-align: center;
+	cursor: pointer
+}
+
+
+.calendar > span.first{
+	background: var(--blue);
+	border-radius: 3px 0 0 3px;
+	color: var(--blue-light)
+}
+
+.calendar > span.last{
+	background: var(--blue);
+	border-radius: 0 3px 3px 0;
+	color: var(--blue-light)
+}
+
+.calendar > span.highlight{
+	background: var(--blue-light);
+}
+
+/* неактивний */
+.calendar > span.disabled{
+	cursor: text;
+	color: var(--gray)
+}
+
+/* неактивний селект */
+.disabled-select{
+	pointer-events: none;
+}
+
+.disabled-select .select-date{
+	color: var(--gray);
+}
+
+/* сірий текст + сірий кутик */
+select.disabled-select{
+	color: var(--gray);
+
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23a5a5a6'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+
+/* відступи після цифри для "грн"*/
+#tv-value-1,
+#tv-value-2,
+#tv-value-3,
+#internet-value-1,
+#internet-value-2{
+	display: inline-block;
+	padding-right: 5px;
+}
+
+/* блок з приміткою */
+#internet-time-now{
+	display: none;
+}
+
+#internet-time-now.active{
+	display: grid;
+}
+
+/* блок пристроїв */
+#tv-devices{
+	display: none;
+}
+
+#tv-devices.active{
+	display: block;
+}
+
+/* кнопка видалення пристрою */
+.delete{
+	width: 18px;
+	height: 21px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234a9ad5' viewBox='0 0 448 512'%3E%3Cpath d='M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z'%3E%3C/path%3E%3C/svg%3E");
+}

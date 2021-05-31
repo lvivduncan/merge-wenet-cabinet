@@ -1,0 +1,450 @@
+/* контент */
+#cabinet main{    
+    padding: 0 20px 20px 50px;
+}
+
+@media(max-width: 996px){
+    #cabinet main{
+        padding: 5px 0;
+    }
+}
+
+/* заголовок */
+#cabinet main h1{
+    margin: 0 0 20px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* блок з контуром */
+#cabinet .block{
+    border-radius: 5px;
+    border: 1px solid var(--gray-light);
+    padding: 12px 10px;
+    margin: 0 0 40px;
+
+    background: var(--white-light);
+    box-shadow: 
+        0 3px 1px -2px rgb(159 193 212 / 30%), 
+        0 2px 2px 0 rgb(159 193 212 / 24%), 
+        0 1px 5px 0 rgb(159 193 212 / 22%);
+}
+
+@media(max-width:996px){
+    #cabinet .block{
+        margin: 10px 0 20px;
+    }
+}
+
+/* короткий опис в 1 абзац */
+#cabinet .block .description{
+    padding: 0 20px;
+    display: block;
+}
+
+/* підзаголовок */
+.block h2{
+    position: relative;
+    font-size: 16px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0 5px 20px;
+    margin: 0 0 10px;
+}
+
+.block h2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--gray);
+    display: block;
+    border-radius: 5px;
+}
+
+/* якщо послуга підключена, то вертикальна смужка зліва стає зеленою */
+.block h2.green{
+    color: var(--black)
+}
+
+.block h2.green::before{
+    background: var(--green)
+}
+
+/* червона смужка */
+.block h2.red{
+    color: var(--black)
+}
+.block h2.red::before{
+    background: var(--red)
+}
+
+#cabinet main h2 svg{
+    width: 22px;
+    height: 22px;
+}
+
+/* іконка і підпис зліва */
+#cabinet main h2 span{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    user-select: none;
+}
+
+#cabinet main h2 span svg{
+    margin-right: 10px;
+}
+
+/* абзацний відступ */
+#cabinet main p{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+/* описи ліво/право */
+ul.user-data{
+    display: block;
+    margin: 10px 20px;
+}
+
+/* лівий блок */
+.user-data li{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-top: 1px solid var(--gray-light);
+    min-height: 59px;
+}
+
+@media(max-width: 540px){
+    .user-data li{
+        /* grid-template-columns: 1fr; */
+        min-height: auto;
+        display: block;
+    }
+}
+
+.user-data li:first-child{
+    border: none;
+}
+
+.user-data li p{
+    display: flex;
+    align-items: center;
+    padding: 10px 0 10px 10px;
+    margin: 0!important;
+}
+
+@media(max-width: 540px){
+    .user-data li p{
+        padding: 0!important;
+        margin: 10px 0!important;
+    }
+}
+
+/* правий блок (з іконкою)*/
+.user-data li p:first-child{
+    color: var(--gray-dark);
+    padding: 10px 0;
+}
+
+/* у деяких шаблонах юзер-дата має бордери вгорі та низу */
+.user-data.borders{
+    border-top: 1px solid var(--gray-light);
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.user-data strong{
+    color: var(--red);
+}
+
+/* кнопка видалення */
+.user-data .icon-on-the-right{
+    float: right;
+    cursor: pointer;
+    margin-left: auto;
+    color: var(--blue)
+}
+
+.user-data li svg{
+    width: 22px;
+    height: 22px;
+    fill: var(--blue);
+}
+
+/* поле для вставки коду від друга */
+.user-data input[type="text"]{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid var(--gray-light);
+    border-radius: 5px;
+    outline: none;
+}
+
+@media(max-width:540px) {
+    .user-data input[type="text"]{
+        margin: 0 0 10px;
+    }    
+}
+
+/* Номер телефону -- sms-нагадування */
+#form-phone{
+    padding: 8px;
+}
+
+/* поля, які редагуються */
+.edit-area{}
+
+.edit-area input[type="text"]{
+    border: none;
+    pointer-events: none;
+    padding-left: 0;
+}
+
+/* поле, яке редагується */
+.edited .edit-area input[type="text"]{
+    background: var(--yellow-light);
+    pointer-events: auto;
+    padding-left: 5px;
+}
+
+/* щоб кнопка не перекидилася на новий рядок */
+@media (max-width: 540px){
+    ul.user-data li.change{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);;
+    }
+}
+
+/* поле, де перемикається кнопка тарифу */
+.change p{
+    align-items: flex-start!important;
+    justify-content: center;
+}
+
+.change p:first-child{
+    justify-content: flex-start;
+}
+
+@media(max-width: 540px){
+    .change p{
+        justify-content: flex-end;
+    }
+}
+
+.change svg{
+    width: 22px;
+    height: 22px;
+    fill: var(--blue);
+    cursor: pointer;
+}
+
+/* поле зі сумою для поповнення */
+#sum{    
+    padding: 5px;
+    border: 1px solid var(--gray-light);
+    border-radius: 5px;
+    outline: none;
+    width: 70px;
+    margin: 0 10px 0 0;
+}
+
+/* ховаємо стрілочки */
+#sum::-webkit-outer-spin-button,
+#sum::-webkit-inner-spin-button{
+    -moz-apperance: none;
+    -webkit-appearance: none;
+    appearance: none;    
+}
+
+/* Кнопка підтвердження (del) */
+#user-confirm{
+    display: none;
+}
+
+#user-confirm.disabled{
+    display: block;
+}
+
+#user-confirm.disabled button{
+    pointer-events: none;
+    background: var(--gray-light);
+    color: var(--black);
+}
+
+/* якщо вона вкладена, то має додатковий відступ */
+.block #user-confirm{
+    margin: 0 20px;
+}
+
+#user-confirm.show{
+    display: block;
+}
+/* Кнопка підтвердження (del) */
+
+/* Кнопка підтвердження (має бути у кожного блоку своя) */
+.user-confirm{}
+
+/* button по дефолту неактивний */
+.user-confirm button{
+    pointer-events: none;
+    background: var(--gray-light);
+    color: var(--black);
+}
+
+.user-confirm.active button{
+    pointer-events: auto;
+    background: var(--blue);
+    color: var(--white);
+}
+
+.user-confirm.active button:hover{    
+    background: var(--cyan-dark);
+}
+
+button{
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--white);
+    background: var(--blue);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 100%;
+    display: block;
+    margin: 0 0 20px;
+    transition: .5s;
+}
+
+button:hover{
+    background: var(--green);
+}
+
+/* header message */
+/* дві кнопки перемикання чекбоксів */
+.main-header{
+    border: 1px solid var(--gray-light);
+    border-left: none;
+    border-right: none;
+    padding: 10px 20px;
+}
+
+.main-header span{
+    display: inline-flex;
+    align-items: center;
+    margin: 0 20px 0 0;
+    cursor: pointer;
+    color: var(--gray);
+}
+
+.main-header span svg{
+    width: 22px;
+    height: 22px;
+    fill: var(--gray);
+    margin: 0 10px 0 0;
+}
+
+.main-header span:hover,
+.main-header span.active{
+    color: var(--black);
+}
+
+.main-header span:hover svg,
+.main-header span.active svg{
+    fill: var(--black);
+}
+
+/* копіювати код */
+#copy-code i{
+    position: relative;
+}
+
+/* tooltip */
+#copy-code i::before{
+    content: 'Скопійовано';
+    display: none;
+    padding: 5px;
+    border-radius: 5px;
+    background: var(--gray);
+    color: var(--white);    
+}
+
+#copy-code i.active::before{
+    display: inline-block;
+    position: absolute;
+    top: -25px;
+    left: -85px;
+}
+
+
+/* додати пристрій */
+#add-device{
+    color: var(--gray);
+    border-top: 1px solid var(--gray-light);
+    display: list-item;
+    min-height: auto;
+}
+
+/* кнопка по правому краю */
+#add-device button{
+    pointer-events: none;
+    margin: 0 0 0 auto;
+
+    text-indent: -9999px;
+    pointer-events: all;
+    width: 26px;
+    height: 26px;
+    background: transparent;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234a9ad5' viewBox='0 0 16 16'%3E%3Cpath d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z'/%3E%3C/svg%3E");
+}
+
+/* нумерований список (перелік девайсів) */
+ol.user-data{
+    margin: 10px 20px;
+}
+
+/* блоки, які показуються після кліку */
+li.insert{
+    color: var(--gray);
+    border-top: 1px solid var(--gray-light);
+    display: list-item;
+    min-height: auto;
+}
+
+li.insert p{
+    display: flex!important;
+}
+
+li.insert a{
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+li.insert a:hover{
+    text-decoration: none;
+}
+
+li.insert strong{
+    color: var(--blue);
+    margin-left: 10px;
+}
+
+ol.user-data button{
+    pointer-events: none;
+    margin: 0 0 0 auto;
+
+    text-indent: -9999px;
+    pointer-events: all;
+    width: 26px;
+    height: 26px;
+    background: transparent;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234a9ad5' viewBox='0 0 16 16'%3E%3Cpath d='M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z'/%3E%3Cpath fill-rule='evenodd' d='M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z'/%3E%3C/svg%3E");
+
+}
+
