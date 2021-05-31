@@ -36,6 +36,17 @@
     }
 }
 
+/* блок статусу */
+#cabinet .block.notice{
+    margin-top: 16px;
+}
+
+@media(max-width:996px) {
+    #cabinet .block.notice{
+        margin-top: 0;
+    }   
+}
+
 /* короткий опис в 1 абзац */
 #cabinet .block .description{
     padding: 0 20px;
