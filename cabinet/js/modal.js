@@ -42,6 +42,6 @@ document.addEventListener('keydown', e => {
 });
 
 // робимо активною кнопку підтвердження
-document.querySelector('#approuve input[type="password"]').addEventListener('input', function(){
+document.querySelector('#approuve input[type="password"]') && document.querySelector('#approuve input[type="password"]').addEventListener('input', function(){
     document.querySelector('#approuve button').className = 'active';
 });

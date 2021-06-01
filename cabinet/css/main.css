@@ -439,6 +439,7 @@ li.insert b{
 li.insert a{
     color: var(--blue);
     text-decoration: underline;
+    padding: 0 5px;
 }
 
 @media(max-width:540px) {
