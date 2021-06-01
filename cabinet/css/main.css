@@ -432,6 +432,15 @@ li.insert p{
     display: flex!important;
 }
 
+li.insert b{
+    padding: 5px;
+}
+
+li.insert a{
+    color: var(--blue);
+    text-decoration: underline;
+}
+
 @media(max-width:996px) {
     #cabinet main li.insert p {
         align-items: center;
@@ -439,7 +448,12 @@ li.insert p{
     }
 
     li.insert b{
-        padding: 5px;
+        padding: 10px;
+    }
+
+    li.insert a{
+        display: block;
+        padding: 10px;
     }
 
     li.insert p button{
@@ -447,10 +461,6 @@ li.insert p{
     }
 }
 
-li.insert a{
-    color: var(--blue);
-    text-decoration: underline;
-}
 
 li.insert a:hover{
     text-decoration: none;
