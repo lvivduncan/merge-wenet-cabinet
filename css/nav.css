@@ -81,14 +81,9 @@
 }
 
 #top-menu li svg{
-    width: 18px;
-    height: 18px;
-    fill: none;
-    stroke: var(--purpur);
-    stroke-width: 1; 
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    margin: 0 5px 0 0;
+    width: 24px;
+    height: 24px;
+    fill: var(--black);
 }
 
 /* mobile menu */
@@ -138,7 +133,7 @@
         padding: 10px 0!important;
         text-transform: none;
         font-weight: normal;
-        font-size: 14px;
+        /* font-size: 14px; */
 
         display: flex!important;
         align-items: center;
@@ -147,6 +142,7 @@
 
     #top-menu li span{
         display: inline-block;
+        padding: 0 10px 0 0;
     }
 
 }
