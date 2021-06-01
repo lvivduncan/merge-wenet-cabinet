@@ -212,4 +212,18 @@
     display: inline-block;
 }
 
-/* todo: .phones & .shedule -- del! */
+/* вихід з кабінету */
+#user-mobile{
+    display: none;
+}
+
+@media(max-width:996px) {
+    #user-mobile{
+        display: block;
+        text-align: center;
+    }
+
+    #user-mobile p{
+        font-weight: 600;
+    }
+}

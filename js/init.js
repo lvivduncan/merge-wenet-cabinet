@@ -51,18 +51,11 @@ if (localStorage.getItem('logo') !== null){
 
 // select city
 document.querySelectorAll('.cities li a').forEach(item => {
-    item.addEventListener('click', function(e){
+    item.addEventListener('click', function(){
 
         // city name
         const cityName = this.innerText;
-
-        // tmp
-        e.preventDefault();
         document.cookie = `city=${cityName}`;
-
-        console.log(document.cookie)
-        // tmp
-
 
         // link to page
         const cityLink = this.href;
@@ -92,9 +85,6 @@ document.querySelectorAll('.cities li a').forEach(item => {
         document.querySelector('#logo a').setAttribute('href', cityLink);
     });
 });
-
-
-
 
 // горизонтальний блок меню (мобільний -- збоку)
 const nav = document.getElementById('nav');
@@ -163,11 +153,24 @@ const topMenu = document.getElementById('top-menu');
 if(window.innerWidth < 996){
     // для краси =)
     document.querySelector('#nav .wrap').remove();
-    
-    sidebarMenu.append(topMenu);
-    nav.prepend(sidebarMenu);
-}
+        
+    // перевірка чи включено меню кабінету
+    if(sidebarMenu != null){
 
+        // якщо бокове меню існує
+        sidebarMenu.append(topMenu);
+        nav.prepend(sidebarMenu);
+    } else {
+
+        // якщо його немає, то вставити напряму
+        const sidebarMenu = document.createElement('div');
+        sidebarMenu.setAttribute('id', 'sidebar-menu');
+        
+        sidebarMenu.append(topMenu);
+        nav.prepend(sidebarMenu);
+    }
+
+}
 
 // rates.html
 if(document.querySelector('#rates') !== null){
