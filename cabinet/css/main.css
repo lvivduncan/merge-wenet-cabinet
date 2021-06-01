@@ -432,6 +432,21 @@ li.insert p{
     display: flex!important;
 }
 
+@media(max-width:996px) {
+    #cabinet main li.insert p {
+        align-items: center;
+        flex-flow: column;
+    }
+
+    li.insert b{
+        padding: 5px;
+    }
+
+    li.insert p button{
+        margin: auto;
+    }
+}
+
 li.insert a{
     color: var(--blue);
     text-decoration: underline;

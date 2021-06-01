@@ -195,6 +195,13 @@ if(document.querySelector('#rates') !== null){
     
             spanRates[index].classList.add('active');
             divRates[index].classList.add('active');
+
+
+// // вирівнювання блоків у тарифі -- за найбільшим
+// heightUpdate('.tariff .options');
+// heightUpdate('.tariff .price');
+// heightUpdate('.tariff .params');
+            
     
         });
     
@@ -469,10 +476,21 @@ function heightUpdate(selectors){
         const toArray = [...elements];
     
         const toNumberArray = toArray.map(item => item.offsetHeight);
+
+        console.log(toNumberArray)
     
         const maxHeight = Math.max(...toNumberArray);
     
-        elements.forEach(item => item.style.height = `${maxHeight}px`);
+        elements.forEach(item => {
+            // костиль
+            if(maxHeight > 160){
+
+                item.style.height = `${maxHeight+20}px`
+            } else {
+
+                item.style.height = `${maxHeight}px`
+            }
+        });
     }
 
 }

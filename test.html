@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,::after,::before{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            display: flex;
+            /* overflow: hidden; */
+            gap: 20px;
+        }
+        .test{
+            /* float: left; */
+            /* width: 33.3333%; */
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="output"></div>
+    
+    <div class="wrapper">
+        <div class="test">
+            <div class="options">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas magni nisi eum expedita exercitationem deleniti magnam aut rem sit? Odit iusto eaque magni consectetur illum eius non alias ex nesciunt quos doloribus sunt corrupti, quo optio esse id, sequi ea maxime. Delectus laboriosam ex placeat quis possimus voluptatem itaque quia eos. Nulla harum fuga maiores, ad quis sint provident molestias, hic atque eligendi perferendis consequatur cumque. Mollitia, doloribus sapiente. Placeat ab molestias, officia est ipsum nihil similique maiores perferendis. Earum minus debitis, dolor eius at tenetur id sapiente. Obcaecati ducimus vel possimus totam tempora facere deserunt necessitatibus officiis at ea. </p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, reiciendis minima culpa sapiente temporibus quos consequuntur magni impedit sequi? Cumque mollitia laboriosam animi reprehenderit aspernatur molestias illo repellat explicabo obcaecati?</p>
+            </div>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam praesentium aut, officia laudantium a repudiandae eos atque qui. Perferendis, dolor! </p> -->
+            <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, accusantium quidem! Veniam veritatis ratione id officia quidem distinctio adipisci molestiae a esse? Non, officia placeat itaque aliquid ratione perferendis odio!</p> -->
+        </div>
+        <div class="test">
+        <div class="options">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas magni nisi eum expedita exercitationem deleniti magnam aut rem sit? Odit iusto eaque magni consectetur illum eius non alias ex nesciunt quos doloribus sunt corrupti, quo optio esse id, sequi ea maxime. Delectus laboriosam ex placeat quis possimus voluptatem itaque quia eos. Nulla harum fuga maiores, ad quis sint provident molestias, hic atque eligendi perferendis consequatur cumque. Mollitia, doloribus sapiente. Placeat ab molestias, officia est ipsum nihil similique maiores perferendis. Earum minus debitis, dolor eius at tenetur id sapiente. Obcaecati ducimus vel possimus totam tempora facere deserunt necessitatibus officiis at ea. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequuntur nulla in vel ea, ab tenetur nostrum, laudantium et asperiores quibusdam maxime cum qui nobis exercitationem repellendus quas quo quam, illum distinctio natus! Reprehenderit, tempore quisquam itaque sunt aliquam odio asperiores architecto doloribus porro assumenda nulla accusantium eos aliquid facere maiores optio sequi illum non nemo suscipit corporis. Nobis, nesciunt?</p>
+        </div>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quaerat dolore enim molestias repellat natus eveniet modi ea! Amet voluptate aliquid, itaque excepturi quod magni dolores laborum magnam voluptatem in, quibusdam libero qui inventore dolorem doloremque accusantium temporibus iste culpa at ullam assumenda provident accusamus. Impedit aliquam ipsum labore recusandae doloribus quasi nisi, fugit aut eius fugiat omnis eveniet error!</p> -->
+        </div>
+        <div class="test">
+            <div class="options">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas magni nisi eum expedita exercitationem deleniti magnam aut rem sit? Odit iusto eaque magni consectetur illum eius non alias ex nesciunt quos doloribus sunt corrupti, quo optio esse id, sequi ea maxime. Delectus laboriosam ex placeat quis possimus voluptatem itaque quia eos. Nulla harum fuga maiores, ad quis sint provident molestias, hic atque eligendi perferendis consequatur cumque. Mollitia, doloribus sapiente. Placeat ab molestias, officia est ipsum nihil similique maiores perferendis. Earum minus debitis, dolor eius at tenetur id sapiente. Obcaecati ducimus vel possimus totam tempora facere deserunt necessitatibus officiis at ea. </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iure voluptatum minima.</p>
+            </div>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam dolorem aspernatur delectus voluptatibus, recusandae quasi odio voluptate! Atque vero sapiente ut neque ullam non odio inventore omnis fugit itaque amet, eligendi ab sint, culpa perferendis esse sequi laboriosam recusandae. Voluptate esse laborum, natus consequuntur labore eaque iure fugiat rerum at veritatis tempora repudiandae quisquam debitis nobis, soluta ab reiciendis illum exercitationem atque consequatur necessitatibus deleniti? A sequi quam, labore et fugit quisquam quasi porro saepe voluptatum error dolores magni perferendis, qui cumque quidem? Assumenda atque id repellendus temporibus quisquam sed officiis dolorem hic eveniet, dolore unde! Enim, dolore in ipsam officiis deleniti nisi rerum at iusto repellendus itaque molestiae repudiandae aliquam, necessitatibus assumenda error eaque excepturi hic minima repellat. Nobis.</p> -->
+        </div>        
+    </div>
+    
+    <script>
+/*         const test = document.querySelectorAll('.test');
+        test.forEach(item => {
+            console.log(item.offsetHeight)
+        }); */
+
+        const options = document.querySelectorAll('.options');
+        options.forEach(item => {
+            // console.log(item.offsetHeight)
+            document.getElementById('output').innerHTML += item.offsetHeight + ' ';
+        });
+    </script>
+
+</body>
+</html>
