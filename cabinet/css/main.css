@@ -441,7 +441,7 @@ li.insert a{
     text-decoration: underline;
 }
 
-@media(max-width:996px) {
+@media(max-width:450px) {
     #cabinet main li.insert p {
         align-items: center;
         flex-flow: column;
