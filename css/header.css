@@ -217,10 +217,18 @@
     display: none;
 }
 
+/* форма виходу */
+#logout-form p{
+    font-weight: 600;
+}
+
 @media(max-width:996px) {
     #user-mobile{
         display: block;
         text-align: center;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid var(--gray);
     }
 
     #user-mobile p{
