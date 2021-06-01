@@ -5,7 +5,7 @@
     display: none;
 
     position: fixed;
-    top: 0;
+    top: 35%;
     left: calc(50% - 150px);
     z-index: 10;
 
