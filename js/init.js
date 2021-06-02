@@ -151,7 +151,9 @@ sidebarBackground.addEventListener('click', () => {
 });
 
 // sidebar menu
-window.addEventListener('resize', moveMenu);
+window.addEventListener('resize', () => {
+    requestAnimationFrame(moveMenu);
+});
 
 function moveMenu(){
     // sidebar menu
