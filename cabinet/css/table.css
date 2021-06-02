@@ -28,7 +28,10 @@ table {
 
 .history-pay th {
     font-size: 14px;
+    /***
     color: var(--gray);
+    ***/
+    color: var(--gray-dark);
     font-weight: normal;
 }
 
