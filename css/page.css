@@ -70,3 +70,14 @@
     margin: 0 0 30px;
     border-radius: 5px;
 }
+
+/* 2-6-2021 */
+#page ul,
+#page ol{
+    margin: 10px 0 10px 30px;
+}
+
+#page li{
+    display: list-item;
+    margin: 5px 0;
+}
