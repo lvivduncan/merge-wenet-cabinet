@@ -1,5 +1,8 @@
 #copy {
-    background: var(--black);
+    /***/
+    /* background: var(--black);*/
+    background: #000;
+    /***/
     color: var(--gray-light);
     padding: 10px 0;
     font-size: 14px;

@@ -1,6 +1,9 @@
 
 #footer {
-    background: var(--gray-dark);
+    /***/
+    /*background: var(--gray-dark);*/
+    background: var(--black);
+    /***/
     color: var(--gray-light);
     padding: 40px 0 0;
     overflow: hidden;

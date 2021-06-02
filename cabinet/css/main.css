@@ -109,6 +109,9 @@
 
 #cabinet main h2 span svg{
     margin-right: 10px;
+    /***/
+    fill: var(--black);
+    /***/
 }
 
 /* абзацний відступ */
@@ -157,6 +160,23 @@ ul.user-data{
         margin: 10px 0!important;
     }
 }
+
+/***/
+.user-data li p input,
+.user-data li p select{
+    margin-left: -10px;
+    margin-right: -10px;
+    width: calc(100% + 10px);
+}
+@media(max-width:540px) {
+    .user-data li p input,
+    .user-data li p select{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }    
+}
+/***/
 
 /* правий блок (з іконкою)*/
 .user-data li p:first-child{
@@ -289,11 +309,13 @@ ul.user-data{
 }
 
 /* якщо вона вкладена, то має додатковий відступ */
-.block #user-confirm{
+.block #user-confirm,
+.block .user-confirm{
     margin: 0 20px;
 }
 
-#user-confirm.show{
+#user-confirm.show,
+.user-confirm.show{
     display: block;
 }
 /* Кнопка підтвердження (del) */

@@ -16,7 +16,16 @@
     --gray-lightly: #fcfcfc;
     --gray-light: #f5f5f5;
     --gray: #e5e5e5;
+    /*
     --gray-dark: #222;
+    */
+    
+    /***/
+    /*
+    --gray-dark: #5c5c5c;
+    */
+    --gray-dark: #858585;
+    /***/
 
     --green-light: #76e46e;
     --green: #1e8f16;

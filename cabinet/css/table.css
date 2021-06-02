@@ -28,7 +28,10 @@ table {
 
 .history-pay th {
     font-size: 14px;
+    /***
     color: var(--gray);
+    ***/
+    color: var(--gray-dark);
     font-weight: normal;
 }
 
@@ -102,7 +105,10 @@ tbody tr:first-child {
 
     .history-pay td::before {
         content: attr(data-label);
-        color: var(--gray);
+        /***/
+        /* color: var(--gray);*/
+        /***/
+        color: var(--gray-dark);
     }
 
     .history-pay td:last-child {
