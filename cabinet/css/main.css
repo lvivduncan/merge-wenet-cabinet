@@ -158,6 +158,15 @@ ul.user-data{
     }
 }
 
+/***/
+.user-data li p input,
+.user-data li p select{
+    margin-left: -10px;
+    margin-right: -10px;
+    width: calc(100% + 10px);
+}
+/***/
+
 /* правий блок (з іконкою)*/
 .user-data li p:first-child{
     color: var(--gray-dark);
