@@ -68,7 +68,10 @@
 }
 
 #top-menu li a{
-    color: var(--gray-dark);
+    /***/
+    /* color: var(--gray-dark); */
+    color: var(--black);
+    /***/
     text-transform: uppercase;
     text-decoration: none;
     transition: 0.5s;
