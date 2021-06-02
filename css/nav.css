@@ -3,6 +3,9 @@
 #nav{
     display: flex;
     align-items: center;
+
+    justify-content: center;
+
     background: var(--gray-light);
     height: 70px;
 
@@ -91,6 +94,14 @@
     height: 24px;
     fill: var(--black);
 }
+
+/* костиль */
+@media(min-width: 996px) {
+    #nav > #sidebar-menu{
+        display: none;
+    }
+}
+/* костиль */
 
 /* mobile menu */
 @media(max-width: 996px) {    

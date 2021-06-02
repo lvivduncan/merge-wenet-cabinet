@@ -12,7 +12,7 @@ document.querySelectorAll('.nav-panel span').forEach(item => item.addEventListen
 // levus-dropdown
 document.querySelectorAll('.nav-panel svg').forEach(item => item.addEventListener('click', openDropdown));
 
-body.addEventListener('click', (e) => {
+body.addEventListener('click', e => {
 
     if(e.target.id === 'levus-dropdown-wrapper'){
 
@@ -86,6 +86,13 @@ document.querySelectorAll('.cities li a').forEach(item => {
     });
 });
 
+
+
+
+
+
+
+
 // горизонтальний блок меню (мобільний -- збоку)
 const nav = document.getElementById('nav');
 
@@ -137,7 +144,6 @@ sidebarBackground.addEventListener('click', () => {
 
     document.getElementById('menu-button').classList.remove('open');
 
-    // для краси =)
     sidebarBackground.remove();
     body.classList.remove('lock');
 
@@ -145,32 +151,56 @@ sidebarBackground.addEventListener('click', () => {
 });
 
 // sidebar menu
-const sidebarMenu = document.getElementById('sidebar-menu');
+window.addEventListener('resize', moveMenu);
 
-// first menu
-const topMenu = document.getElementById('top-menu');
+function moveMenu(){
+    // sidebar menu
+    const sidebarMenu = document.getElementById('sidebar-menu');
 
-if(window.innerWidth < 996){
-    // для краси =)
-    document.querySelector('#nav .wrap').remove();
-        
-    // перевірка чи включено меню кабінету
-    if(sidebarMenu != null){
+    // first menu
+    const topMenu = document.getElementById('top-menu');
 
-        // якщо бокове меню існує
-        sidebarMenu.append(topMenu);
-        nav.prepend(sidebarMenu);
-    } else {
+    const cabinet = document.getElementById('cabinet');
 
-        // якщо його немає, то вставити напряму
-        const sidebarMenu = document.createElement('div');
-        sidebarMenu.setAttribute('id', 'sidebar-menu');
-        
-        sidebarMenu.append(topMenu);
-        nav.prepend(sidebarMenu);
+    if(window.innerWidth < 996){
+            
+        // перевірка чи включено меню кабінету
+        if(sidebarMenu != null){
+    
+            // якщо бокове меню існує
+            sidebarMenu.append(topMenu);
+            nav.prepend(sidebarMenu);
+        } else {
+    
+            // якщо його немає, то вставити напряму
+            const sidebarMenu = document.createElement('div');
+            sidebarMenu.setAttribute('id', 'sidebar-menu');
+            
+            sidebarMenu.append(topMenu);
+            nav.prepend(sidebarMenu);
+        }
+    
+    } else if(window.innerWidth >= 996){
+        // повертаємо верхнє меню назад
+
+        nav.prepend(topMenu);
+        cabinet && cabinet.prepend(sidebarMenu);
+
+        // видаляємо активацію меню
+        sidebarBackground.remove();
+        body.classList.remove('lock');
+
+        // close menu-button
+        document.getElementById('menu-button').classList.remove('open');
+
+        // close mobile nav
+        nav.classList.remove('open');
+    
+        flag = false;
     }
-
 }
+
+moveMenu();
 
 // rates.html
 if(document.querySelector('#rates') !== null){
@@ -477,7 +507,7 @@ function heightUpdate(selectors){
     
         const toNumberArray = toArray.map(item => item.offsetHeight);
 
-        console.log(toNumberArray)
+        // console.log(toNumberArray)
     
         const maxHeight = Math.max(...toNumberArray);
     

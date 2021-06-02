@@ -11,57 +11,225 @@
             margin: 0;
             box-sizing: border-box;
         }
-        .wrapper{
-            display: flex;
-            /* overflow: hidden; */
-            gap: 20px;
+
+        p{
+            margin: 0 0 20px;
+            padding: 5px 0;
         }
-        .test{
-            display: inline-block;
+
+        #tabs{
+            display: flex;
+            width: 350px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #tabs span{
+            display: block;
+            padding: 10px;
+            cursor: pointer;
+            border: 4px solid red;
+        }
+        #tabs span.active{
+            border-color: green;
+        }
+
+        .pane{
+            display: none;
+        }
+        .pane.active{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 20px;
+            /**/
+            /* margin: 0 0 20px; */
+        }
+
+        .button{
+            background: blue;
+            color: white;
+            font-weight: bold;
+            padding: 5px;
+            text-align: center;
         }
     </style>
 
 </head>
-<body>
-
-    <div id="output"></div>
+<body style="padding: 100px;">
     
+    <div id="tabs">
+        <span>pane 1</span>
+        <span>pane 2</span>
+        <span>pane 3</span>
+    </div>
+
     <div class="wrapper">
-        <div class="test">
-            <div class="options">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas magni nisi eum expedita exercitationem deleniti magnam aut rem sit? Odit iusto eaque magni consectetur illum eius non alias ex nesciunt quos doloribus sunt corrupti, quo optio esse id, sequi ea maxime. Delectus laboriosam ex placeat quis possimus voluptatem itaque quia eos. Nulla harum fuga maiores, ad quis sint provident molestias, hic atque eligendi perferendis consequatur cumque. Mollitia, doloribus sapiente. Placeat ab molestias, officia est ipsum nihil similique maiores perferendis. Earum minus debitis, dolor eius at tenetur id sapiente. Obcaecati ducimus vel possimus totam tempora facere deserunt necessitatibus officiis at ea. </p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, reiciendis minima culpa sapiente temporibus quos consequuntur magni impedit sequi? Cumque mollitia laboriosam animi reprehenderit aspernatur molestias illo repellat explicabo obcaecati?</p>
+
+        <div class="pane">
+            <div class="test">
+                <div class="options">
+                    <h1>pane 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas magni nisi eum expedita exercitationem deleniti magnam aut rem sit? Odit iusto eaque magni consectetur illum eius non alias ex nesciunt quos doloribus sunt corrupti, quo optio esse id, sequi ea maxime. Delectus laboriosam ex placeat quis possimus voluptatem itaque quia eos. Nulla harum fuga maiores, ad quis sint provident molestias, hic atque eligendi perferendis consequatur cumque. Mollitia, doloribus sapiente. Placeat ab molestias, officia est ipsum nihil similique maiores perferendis. Earum minus debitis, dolor eius at tenetur id sapiente. Obcaecati ducimus vel possimus totam tempora facere deserunt necessitatibus officiis at ea. </p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, reiciendis minima culpa sapiente temporibus quos consequuntur magni impedit sequi? Cumque mollitia laboriosam animi reprehenderit aspernatur molestias illo repellat explicabo obcaecati?</p>
+                </div>
+                <div class="button">
+                    button
+                </div>
             </div>
-            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam praesentium aut, officia laudantium a repudiandae eos atque qui. Perferendis, dolor! </p> -->
-            <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, accusantium quidem! Veniam veritatis ratione id officia quidem distinctio adipisci molestiae a esse? Non, officia placeat itaque aliquid ratione perferendis odio!</p> -->
-        </div>
-        <div class="test">
-        <div class="options">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas magni nisi eum expedita exercitationem deleniti magnam aut rem sit? Odit iusto eaque magni consectetur illum eius non alias ex nesciunt quos doloribus sunt corrupti, quo optio esse id, sequi ea maxime. Delectus laboriosam ex placeat quis possimus voluptatem itaque quia eos. Nulla harum fuga maiores, ad quis sint provident molestias, hic atque eligendi perferendis consequatur cumque. Mollitia, doloribus sapiente. Placeat ab molestias, officia est ipsum nihil similique maiores perferendis. Earum minus debitis, dolor eius at tenetur id sapiente. Obcaecati ducimus vel possimus totam tempora facere deserunt necessitatibus officiis at ea. </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequuntur nulla in vel ea, ab tenetur nostrum, laudantium et asperiores quibusdam maxime cum qui nobis exercitationem repellendus quas quo quam, illum distinctio natus! Reprehenderit, tempore quisquam itaque sunt aliquam odio asperiores architecto doloribus porro assumenda nulla accusantium eos aliquid facere maiores optio sequi illum non nemo suscipit corporis. Nobis, nesciunt?</p>
-        </div>
-            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quaerat dolore enim molestias repellat natus eveniet modi ea! Amet voluptate aliquid, itaque excepturi quod magni dolores laborum magnam voluptatem in, quibusdam libero qui inventore dolorem doloremque accusantium temporibus iste culpa at ullam assumenda provident accusamus. Impedit aliquam ipsum labore recusandae doloribus quasi nisi, fugit aut eius fugiat omnis eveniet error!</p> -->
-        </div>
-        <div class="test">
-            <div class="options">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas magni nisi eum expedita exercitationem deleniti magnam aut rem sit? Odit iusto eaque magni consectetur illum eius non alias ex nesciunt quos doloribus sunt corrupti, quo optio esse id, sequi ea maxime. Delectus laboriosam ex placeat quis possimus voluptatem itaque quia eos. Nulla harum fuga maiores, ad quis sint provident molestias, hic atque eligendi perferendis consequatur cumque. Mollitia, doloribus sapiente. Placeat ab molestias, officia est ipsum nihil similique maiores perferendis. Earum minus debitis, dolor eius at tenetur id sapiente. Obcaecati ducimus vel possimus totam tempora facere deserunt necessitatibus officiis at ea. </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iure voluptatum minima.</p>
+            <div class="test">
+                <div class="options">
+                    <h1>pane 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas magni nisi eum expedita exercitationem deleniti magnam aut rem sit? Odit iusto eaque magni consectetur illum eius non alias ex nesciunt quos doloribus sunt corrupti, quo optio esse id, sequi ea maxime. Delectus laboriosam ex placeat quis possimus voluptatem itaque quia eos. Nulla harum fuga maiores, ad quis sint provident molestias, hic atque eligendi perferendis consequatur cumque. Mollitia, doloribus sapiente. Placeat ab molestias, officia est ipsum nihil similique maiores perferendis. Earum minus debitis, dolor eius at tenetur id sapiente. Obcaecati ducimus vel possimus totam tempora facere deserunt necessitatibus officiis at ea. </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequuntur nulla in vel ea, ab tenetur nostrum, laudantium et asperiores quibusdam maxime cum qui nobis exercitationem repellendus quas quo quam, illum distinctio natus! Reprehenderit, tempore quisquam itaque sunt aliquam odio asperiores architecto doloribus porro assumenda nulla accusantium eos aliquid facere maiores optio sequi illum non nemo suscipit corporis. Nobis, nesciunt?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequuntur nulla in vel ea, ab tenetur nostrum, laudantium et asperiores quibusdam maxime cum qui nobis exercitationem repellendus quas quo quam, illum distinctio natus! Reprehenderit, tempore quisquam itaque sunt aliquam odio asperiores architecto doloribus porro assumenda nulla accusantium eos aliquid facere maiores optio sequi illum non nemo suscipit corporis. Nobis, nesciunt?</p>
+                </div>
+                <div class="button">
+                    button
+                </div>
             </div>
-            <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam dolorem aspernatur delectus voluptatibus, recusandae quasi odio voluptate! Atque vero sapiente ut neque ullam non odio inventore omnis fugit itaque amet, eligendi ab sint, culpa perferendis esse sequi laboriosam recusandae. Voluptate esse laborum, natus consequuntur labore eaque iure fugiat rerum at veritatis tempora repudiandae quisquam debitis nobis, soluta ab reiciendis illum exercitationem atque consequatur necessitatibus deleniti? A sequi quam, labore et fugit quisquam quasi porro saepe voluptatum error dolores magni perferendis, qui cumque quidem? Assumenda atque id repellendus temporibus quisquam sed officiis dolorem hic eveniet, dolore unde! Enim, dolore in ipsam officiis deleniti nisi rerum at iusto repellendus itaque molestiae repudiandae aliquam, necessitatibus assumenda error eaque excepturi hic minima repellat. Nobis.</p> -->
-        </div>        
+            <div class="test">
+                <div class="options">
+                    <h1>pane 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas magni nisi eum expedita exercitationem deleniti magnam aut rem sit? Odit iusto eaque magni consectetur illum eius non alias ex nesciunt quos doloribus sunt corrupti, quo optio esse id, sequi ea maxime. Delectus laboriosam ex placeat quis possimus voluptatem itaque quia eos. Nulla harum fuga maiores, ad quis sint provident molestias, hic atque eligendi perferendis consequatur cumque. Mollitia, doloribus sapiente. Placeat ab molestias, officia est ipsum nihil similique maiores perferendis. Earum minus debitis, dolor eius at tenetur id sapiente. Obcaecati ducimus vel possimus totam tempora facere deserunt necessitatibus officiis at ea. </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iure voluptatum minima.</p>
+                </div>
+                <div class="button">
+                    button
+                </div>
+            </div>  
+        </div>
+
+        <!-- 2 -->
+        <div class="pane">
+            <div class="test">
+                <div class="options">
+                    <h1>pane 2</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas magni nisi eum expedita exercitationem deleniti magnam aut rem sit? Odit iusto eaque magni consectetur illum eius non alias ex nesciunt quos doloribus sunt corrupti, quo optio esse id, sequi ea maxime. Delectus laboriosam ex placeat quis possimus voluptatem itaque quia eos. Nulla harum fuga maiores, ad quis sint provident molestias, hic atque eligendi perferendis consequatur cumque. Mollitia, doloribus sapiente. Placeat ab molestias, officia est ipsum nihil similique maiores perferendis. Earum minus debitis, dolor eius at tenetur id sapiente. Obcaecati ducimus vel possimus totam tempora facere deserunt necessitatibus officiis at ea. </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iure voluptatum minima.</p>
+                </div>
+                <div class="button">
+                    button
+                </div>
+            </div>        
+            <div class="test">
+                <div class="options">
+                    <h1>pane 2</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas magni nisi eum expedita exercitationem deleniti magnam aut rem sit? Odit iusto eaque magni consectetur illum eius non alias ex nesciunt quos doloribus sunt corrupti, quo optio esse id, sequi ea maxime. Delectus laboriosam ex placeat quis possimus voluptatem itaque quia eos. Nulla harum fuga maiores, ad quis sint provident molestias, hic atque eligendi perferendis consequatur cumque. Mollitia, doloribus sapiente. Placeat ab molestias, officia est ipsum nihil similique maiores perferendis. Earum minus debitis, dolor eius at tenetur id sapiente. Obcaecati ducimus vel possimus totam tempora facere deserunt necessitatibus officiis at ea. </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odit natus delectus magni distinctio optio laborum aspernatur dolores praesentium maxime!</p>
+                </div>
+                <div class="button">
+                    button
+                </div>
+            </div>        
+            <div class="test">
+                <div class="options">
+                    <h1>pane 2</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas magni nisi eum expedita exercitationem deleniti magnam aut rem sit? Odit iusto eaque magni consectetur illum eius non alias ex nesciunt quos doloribus sunt corrupti, quo optio esse id, sequi ea maxime. Delectus laboriosam ex placeat quis possimus voluptatem itaque quia eos. Nulla harum fuga maiores, ad quis sint provident molestias, hic atque eligendi perferendis consequatur cumque. Mollitia, doloribus sapiente. Placeat ab molestias, officia est ipsum nihil similique maiores perferendis. Earum minus debitis, dolor eius at tenetur id sapiente. Obcaecati ducimus vel possimus totam tempora facere deserunt necessitatibus officiis at ea. </p>
+                </div>
+                <div class="button">
+                    button
+                </div>
+            </div>  
+        </div>
+
+        <!-- 3 -->
+        <div class="pane">
+            <div class="test">
+                <div class="options">
+                    <h1>pane 3</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iure voluptatum minima.</p>
+                </div>
+                <div class="button">
+                    button
+                </div>
+            </div>        
+            <div class="test">
+                <div class="options">
+                    <h1>pane 3</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odit natus delectus magni distinctio optio laborum aspernatur dolores praesentium maxime!</p>
+                </div>
+                <div class="button">
+                    button
+                </div>
+            </div>        
+            <div class="test">
+                <div class="options">
+                    <h1>pane 3</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas magni nisi eum expedita exercitationem deleniti magnam aut rem sit? Odit iusto eaque magni consectetur illum eius non alias ex nesciunt quos doloribus sunt corrupti, quo optio esse id, sequi ea maxime. Delectus laboriosam ex placeat quis possimus voluptatem itaque quia eos. Nulla harum fuga maiores, ad quis sint provident molestias, hic atque eligendi perferendis consequatur cumque. Mollitia, doloribus sapiente. Placeat ab molestias, officia est ipsum nihil similique maiores perferendis. Earum minus debitis, dolor eius at tenetur id sapiente. Obcaecati ducimus vel possimus totam tempora facere deserunt necessitatibus officiis at ea. </p>
+                </div>
+                <div class="button">
+                    button
+                </div>
+            </div>  
+        </div>
+
+                  
     </div>
     
     <script>
-/*         const test = document.querySelectorAll('.test');
-        test.forEach(item => {
-            console.log(item.offsetHeight)
-        }); */
+        const span = document.querySelectorAll('#tabs span');
+        const pane = document.querySelectorAll('.pane');
 
-        const options = document.querySelectorAll('.options');
-        options.forEach(item => {
-            // console.log(item.offsetHeight)
-            document.getElementById('output').innerHTML += item.offsetHeight + ' ';
+        span[0].classList.add('active');
+        pane[0].classList.add('active');
+
+        span.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                span.forEach(item => item.classList.remove('active'));
+                span[index].classList.add('active');
+
+                pane.forEach(item => item.classList.remove('active'));
+                pane[index].classList.add('active');
+
+                const activeTest = pane[index].querySelectorAll('.options'); // todo: calculate margins inner elements
+
+                console.log(activeTest)
+
+                const arrayTest = [...activeTest];
+
+                const heightTest = arrayTest.map(item => item.offsetHeight);
+
+                const maxHeight = Math.max(...heightTest);
+
+                console.log(maxHeight, heightTest)
+
+                const newTest = pane[index].querySelectorAll('.options');
+
+                newTest.forEach(item => item.style.height = `${maxHeight}px`);
+            });
+
         });
+/* 
+        console.log(
+            document.body.scrollHeight,
+            document.documentElement.scrollHeight,
+            document.body.offsetHeight, 
+            document.documentElement.offsetHeight,
+            document.body.clientHeight, 
+            document.documentElement.clientHeight
+        )
+
+        console.log(
+            window.innerWidth,
+            window.offsetWidth, // undefined
+            document.documentElement.offsetWidth,
+            document.documentElement.clientWidth,
+        ) */
+/* 
+        console.time('int1');
+            console.log(parseFloat('1.1'))
+        console.timeEnd('int1');
+
+        console.time('int2');
+            console.log('1.1' * 1)
+        console.timeEnd('int2');
+
+
+        console.time('int3');
+            console.log(+'1.1')
+        console.timeEnd('int3');
+ */
+        
+        
     </script>
 
 </body>
