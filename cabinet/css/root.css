@@ -39,7 +39,13 @@
 
 body{
     color: var(--black);
-    line-height: normal;
+
+
+
+
+
+
+    /* line-height: normal; */
 }
 
 /* основний блок кабінету */
