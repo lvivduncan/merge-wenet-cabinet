@@ -247,7 +247,7 @@ window.onload = function(){
     // update height blocks
     function changeHeight(selector, className){
         const selectors = selector.querySelectorAll(className);
-        
+
         const height = [...selectors].map(item => item.offsetHeight);
 
         const maxHeight = Math.max(...height);
@@ -279,7 +279,6 @@ window.onload = function(){
         });
     });
     
-    
     // faq
     if(document.getElementById('faq-content') !== null){
     
@@ -293,7 +292,6 @@ window.onload = function(){
             });
         });
     }
-    
     
     // swipe-slider
     {
@@ -506,8 +504,6 @@ window.onload = function(){
 
 }
 
-
-
 // cabinet
 document.getElementById('auth-form') && document.getElementById('auth-form').addEventListener('submit', function () {
 
@@ -529,7 +525,6 @@ document.getElementById('auth-form') && document.getElementById('auth-form').add
     return false;
 
 });
-
 
 /* 
 {
@@ -556,7 +551,5 @@ document.getElementById('auth-form') && document.getElementById('auth-form').add
     }
 }
  */
-
-
 
 // end
