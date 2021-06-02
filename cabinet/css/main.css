@@ -109,6 +109,9 @@
 
 #cabinet main h2 span svg{
     margin-right: 10px;
+    /***/
+    fill: var(--gray-dark);
+    /***/
 }
 
 /* абзацний відступ */
