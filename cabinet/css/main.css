@@ -164,10 +164,11 @@ ul.user-data{
 /***/
 .user-data li p input,
 .user-data li p select{
-    margin-left: -10px;
+    margin-left: -14px;
     margin-right: -10px;
-    width: calc(100% + 10px);
+    width: calc(100% + 14px);
 }
+
 @media(max-width:540px) {
     .user-data li p input,
     .user-data li p select{
@@ -235,14 +236,14 @@ ul.user-data{
     border: none;
     pointer-events: none;
     padding-left: 0;
+    background: transparent;
 }
 
 /* поле, яке редагується */
 .edited .edit-area input[type="text"]{
-    /* background: var(--yellow-light); */
-    background: var(--blue-light);
     pointer-events: auto;
     padding-left: 5px;
+    outline: 1px solid var(--blue);
 }
 
 /* щоб кнопка не перекидилася на новий рядок */
