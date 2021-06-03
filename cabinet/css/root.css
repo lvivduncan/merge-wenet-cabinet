@@ -8,13 +8,13 @@
 
 :root{
     --blue: #4a9ad5;
-    --blue-light: #ecf3f9; /* для календаря */
+    --blue-light: #ecf3f9; /* для календаря і поле редагування */
 
     --text: #8a8887;
     --yellow: #ffffe3;
     --gold: #ffd700;
     --yellow-light: #ffffde;
-    --blue-light: #d4ecff;
+    /* --blue-light: #d4ecff; */
 }
 
 body{
