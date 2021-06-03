@@ -130,7 +130,8 @@ tbody tr:first-child {
 
 .history-connect thead th{
     padding: 5px 0 15px;
-    color: var(--gray);
+    /* color: var(--gray); */
+    color: var(--gray-dark);
     font-weight: normal;
 }
 
