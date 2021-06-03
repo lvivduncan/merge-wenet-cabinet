@@ -16,7 +16,8 @@
     transition: .1s;
 }
 
-#user:hover{
+#user:hover,
+#user.active{
     background: var(--gray-light);
 }
 
