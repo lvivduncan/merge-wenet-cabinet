@@ -193,6 +193,7 @@ ul.user-data{
 
 .user-data strong{
     color: var(--red);
+    margin-right: 5px;
 }
 
 /* кнопка видалення */
