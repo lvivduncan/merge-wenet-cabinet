@@ -14,37 +14,11 @@
     --yellow: #ffffe3;
     --gold: #ffd700;
     --yellow-light: #ffffde;
-
-/* стилі з нового шаблону сайту */
-    /* --purpur: #ae5cfe;
-    --cyan: #42A5F5;
-    --cyan-dark: #337AB7;
-    --cyan-light: #f8f8ff;
-
-    --gray-lightly: #fcfcfc;
-    --gray-light: #f5f5f5;
-    --gray: #e5e5e5;
-    --gray-dark: #222;
-
-    --green-light: #76e46e;
-    --green: #1e8f16;
-    --green-dark: #106809;
-
-    --red: #b31414;
-
-    --black: #1a1a1a;
-    --white: #fffff0;
-    --white-light: #fff; */
+    --blue-light: #d4ecff;
 }
 
 body{
     color: var(--black);
-
-
-
-
-
-
     /* line-height: normal; */
 }
 
