@@ -251,6 +251,7 @@ ul.user-data{
 } */
 
 .edited .edit-area input[type="text"]:not([readonly]) {
+    height: 35px;
     pointer-events: auto;
     border: 1px solid var(--black);
     padding: .375rem 1.75rem .375rem .75rem;
