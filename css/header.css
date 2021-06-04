@@ -89,6 +89,11 @@
     #nav-panel span{
         display: none;
     }
+
+    #nav-panel span.shedule.open{
+        display: inline-block;
+    }
+    
     #nav-panel .levus-dropdown-content .cities li span{
         display: flex;
     }
