@@ -138,6 +138,11 @@ select {
 	position: relative;
 }
 
+.selects.new-date{
+	width: calc(100% + 24px)!important;
+    margin: 0 -10px 0 -14px!important;
+}
+
 /* селект для дати */
 .select-date{
 	display: block;
