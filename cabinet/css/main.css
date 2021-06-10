@@ -255,7 +255,8 @@ ul.user-data{
     height: 35px;
     border: 1px solid transparent;
     padding: .375rem 1.75rem .375rem .75rem;
-    border-radius: .25rem;    
+    border-radius: .25rem;
+    font-size: 14px;
 }
 
 /* активне */
