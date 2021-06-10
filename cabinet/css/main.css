@@ -180,7 +180,7 @@ ul.user-data{
     margin: 0;
     margin-left: -14px;
     margin-right: -10px;
-    width: calc(100% + 14px);
+    width: calc(100% + 24px);
 }
 
 @media(max-width:540px) {
