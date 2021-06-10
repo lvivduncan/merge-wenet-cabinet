@@ -127,6 +127,9 @@ ul.user-data{
     margin: 10px 20px;
 }
 
+/* без переносу іконки на мобільному. спеціально для Юри. 10-06-2021 */
+ul.user-data.no-wrap{}
+
 /* лівий блок */
 .user-data li{
     display: grid;
@@ -144,6 +147,11 @@ ul.user-data{
     .user-data li{
         min-height: auto;
         display: block;
+    }
+
+/* без переносу іконки на мобільному. спеціально для Юри. 10-06-2021 */
+    ul.user-data.no-wrap li{
+        display: grid;
     }
 }
 
