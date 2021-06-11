@@ -404,6 +404,11 @@ button:hover{
 }
 
 /* якщо батон у блоці "notice", то тоді кнопка виглядає, як лінк! */
+.notice form{
+    display: block;
+    margin: 0 0 0 20px;
+}
+
 .notice button {
     display: inline-block;
     background: transparent;
