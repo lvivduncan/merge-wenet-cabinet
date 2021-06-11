@@ -131,6 +131,10 @@
     justify-content: center;
 }
 
+#sidebar-menu li span b:empty {
+    display: none;
+}
+
 /* враппер для фону */
 #sidebar-background{
     position: fixed;

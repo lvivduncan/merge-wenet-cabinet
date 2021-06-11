@@ -403,6 +403,25 @@ button:hover{
     background: var(--green);
 }
 
+/* якщо батон у блоці "notice", то тоді кнопка виглядає, як лінк! */
+.notice button {
+    display: inline-block;
+    background: transparent;
+    color: var(--blue);
+    width: auto;
+    padding: 0;
+    margin: auto;
+    text-decoration: underline;
+    transition: none;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.notice button:hover{
+    text-decoration: none;
+}
+
+
 /* header message */
 /* дві кнопки перемикання чекбоксів */
 .main-header{
