@@ -163,6 +163,7 @@ ul.user-data.no-wrap{}
 /* без переносу іконки на мобільному. спеціально для Юри. 10-06-2021 */
     ul.user-data.no-wrap li{
         display: grid;
+        grid-template-columns: 75% 25%;
     }
 }
 
