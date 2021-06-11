@@ -166,6 +166,22 @@ ul.user-data.no-wrap{}
     }
 }
 
+/* спеціально для Юри 2 -- іконка справа, контент зліва на мобільному */
+@media(max-width:540px) {
+    ul.user-data.no-wrap-icon li{
+        position: relative;
+    }
+
+    ul.user-data.no-wrap-icon li .icon-link{
+        position: absolute;
+        top: calc(50% - 11px);
+        right: 0;
+    }
+}
+
+
+
+
 .user-data li:first-child{
     border: none;
 }
