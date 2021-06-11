@@ -1,6 +1,7 @@
 /* контент */
 #cabinet main{    
-    padding: 0 20px 20px 50px;
+    /* padding: 0 20px 20px 50px; */
+    padding: 0 20px 0 50px;
 }
 
 @media(max-width: 996px){
@@ -36,14 +37,24 @@
     }
 }
 
+/* в останнього забираємо відступ за допомогою aside! */
+/* #cabinet-main .block:last-child{
+    margin-bottom: 0;
+} */
+
+/* #cabinet .block:last-child,
+#cabinet .block:nth-last-child(1){
+    margin-bottom: 0;
+} */
+
 /* блок статусу */
 #cabinet .block.notice{
-    margin-top: 16px;
+    /* margin-top: 16px; */
 }
 
 @media(max-width:996px) {
     #cabinet .block.notice{
-        margin-top: 0;
+        /* margin-top: 0; */
     }   
 }
 
@@ -183,7 +194,7 @@ ul.user-data.no-wrap{}
 }
 
 /***/
-.user-data li p input,
+.user-data li p input[type="text"],
 .user-data li p select{
     margin: 0;
     margin-left: -14px;
@@ -192,7 +203,7 @@ ul.user-data.no-wrap{}
 }
 
 @media(max-width:540px) {
-    .user-data li p input,
+    .user-data li p input[type="text"],
     .user-data li p select{
         margin-left: auto;
         margin-right: auto;
@@ -250,6 +261,11 @@ ul.user-data.no-wrap{}
 /* Номер телефону -- sms-нагадування */
 #form-phone{
     padding: 8px;
+
+    margin: 0;
+    margin-left: -14px;
+    margin-right: -10px;
+    width: calc(100% + 24px);
 }
 
 /* поля, які редагуються */
@@ -450,6 +466,12 @@ button:hover{
     border-top: 1px solid var(--gray-light);
     display: list-item;
     min-height: auto;
+
+    margin: 0 0 0 15px;
+}
+
+#add-device .insert-text{
+    padding-left: 10px;
 }
 
 /* кнопка по правому краю */
@@ -476,6 +498,8 @@ li.insert{
     border-top: 1px solid var(--gray-light);
     display: list-item;
     min-height: auto;
+
+    margin: 0 0 0 15px;
 }
 
 li.insert p{
@@ -494,8 +518,8 @@ li.insert a{
 
 @media(max-width:540px) {
     #cabinet main li.insert p {
-        align-items: center;
-        flex-flow: column;
+        /* align-items: center; */
+        /* flex-flow: column; */
     }
 
     li.insert b{
@@ -504,11 +528,23 @@ li.insert a{
 
     li.insert a{
         display: block;
-        padding: 10px;
+        padding: 10px 10px 0;
     }
 
     li.insert p button{
-        margin: auto;
+        /* margin: auto; */
+        margin: 0 0 0 auto;
+    }
+
+    span.insert-latest{
+        display: block;
+        padding-left: 10px;
+    }
+}
+
+@media(max-width:400px) {
+    span.insert-latest{
+        display: none;
     }
 }
 
