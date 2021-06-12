@@ -336,7 +336,8 @@ ul.user-data.no-wrap{}
 .edit-area{}
 
 /* поле, яке редагується */
-.edit-area input[type="text"]{
+.edit-area input[type="text"],
+.edit-area input[type="password"]{
     pointer-events: none;
     background: transparent;
     width: calc(100% + 15px);
@@ -348,7 +349,8 @@ ul.user-data.no-wrap{}
 }
 
 /* активне */
-.edited .edit-area input[type="text"]:not([readonly]) {
+.edited .edit-area input[type="text"]:not([readonly]),
+.edited .edit-area input[type="password"]:not([readonly]) {
     border-color: var(--black);
 }
 
