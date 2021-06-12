@@ -173,18 +173,23 @@ ul.user-data.no-wrap{}
         position: relative;
     }
         
-    ul.user-data.no-wrap-icon li p{
+/*     ul.user-data.no-wrap-icon li p{
         padding-left: 10px!important;
     }
     
     ul.user-data.no-wrap-icon li p:first-child{
         padding-left: 0!important;
-    }
+    } */
 
     ul.user-data.no-wrap-icon li .icon-link{
         position: absolute;
         top: calc(50% - 11px);
         right: 0;
+    }
+
+    /* примусовий відступ зліва для полів */
+    .pl-10-540{
+        padding-left: 10px!important;
     }
 }
 
