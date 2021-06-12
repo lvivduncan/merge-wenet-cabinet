@@ -193,6 +193,11 @@ ul.user-data.no-wrap{}
         display: block;
         margin: 0 0 10px;
     }
+
+    /* виправляємо рукожопість адміна */
+    #cabinet main p.width-100 br{
+        display: none;
+    }
 }
 
 /* поле з паролем і кнопка для активації показу пароля */
