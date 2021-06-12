@@ -566,7 +566,7 @@ button:hover{
 
 @media(max-width:540px) {   
     #add-device .insert-text{
-        padding-left: 10px;
+        padding-left: 10px!important;
     }
 }
 
