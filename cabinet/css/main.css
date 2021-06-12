@@ -298,6 +298,13 @@ ul.user-data.no-wrap{}
     width: calc(100% + 24px);
 }
 
+@media(max-width:540px) {
+    #form-phone{
+        margin: 0;
+        width: 100%;
+    }
+}
+
 /* поля, які редагуються */
 .edit-area{}
 
