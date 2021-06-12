@@ -171,6 +171,12 @@ ul.user-data.no-wrap{}
 @media(max-width:540px) {
     ul.user-data.no-wrap-icon li{
         position: relative;
+        padding-left: 10px!important;
+    }
+
+    ul.user-data.no-wrap-icon li:first-child{
+        position: relative;
+        padding-left: 0!important;
     }
 
     ul.user-data.no-wrap-icon li .icon-link{
