@@ -188,7 +188,7 @@ ul.user-data.no-wrap{}
     }
 
     /* примусовий відступ зліва для полів */
-    .pl-10-540{
+    #cabinet main .pl-10-540{
         padding-left: 10px!important;
     }
 }
