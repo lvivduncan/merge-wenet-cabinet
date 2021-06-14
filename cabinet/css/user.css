@@ -58,6 +58,7 @@
 #user-description strong,
 #user-description span span{
     display: inline;
+    white-space: nowrap;
 }
 
 #user-description strong{
