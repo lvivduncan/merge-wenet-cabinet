@@ -53,12 +53,12 @@
 #user-description strong,
 #user-description span{
     display: block;
+    white-space: nowrap;
 }
 
 #user-description strong,
 #user-description span span{
     display: inline;
-    white-space: nowrap;
 }
 
 #user-description strong{
