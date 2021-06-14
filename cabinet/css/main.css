@@ -210,6 +210,12 @@ ul.user-data.no-wrap{}
     margin: 0 0 0 -14px;
 }
 
+@media(max-width:540px) {
+    #cabinet main #password-area input{
+        margin: 0;
+    }    
+}
+
 #cabinet main #password-area-button{
     width: 24px;
     height: 24px;
