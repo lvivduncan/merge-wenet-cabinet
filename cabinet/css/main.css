@@ -339,7 +339,7 @@ ul.user-data.no-wrap{}
 /* поле, яке редагується */
 .edit-area input[type="text"],
 .edit-area input[type="password"]{
-    pointer-events: none;
+    /* pointer-events: none; */
     background: transparent;
     width: calc(100% + 15px);
     height: 35px;
