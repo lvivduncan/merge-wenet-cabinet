@@ -168,7 +168,7 @@ ul.user-data.no-wrap{}
 }
 
 /* спеціально для Юри. 13-06-2021 */
-@media(max-width:996px){
+/* @media(max-width:996px){ */
     /* примусове вирівнювання на всю ширину для окремого блока */
     #cabinet main p.width-100{
         display: block;
@@ -183,7 +183,7 @@ ul.user-data.no-wrap{}
     #cabinet main p.width-100 br{
         display: none;
     }
-}
+/* } */
 
 /* спеціально для Юри 2 -- іконка справа, контент зліва на мобільному */
 @media(max-width:540px) {
