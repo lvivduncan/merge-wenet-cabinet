@@ -323,13 +323,13 @@ ul.user-data.no-wrap{}
 }
 
 /* Номер телефону -- sms-нагадування */
-#form-phone{
-    padding: 8px;
-
+#form-phone {
+    padding: 8px 8px 8px 12px;
     margin: 0;
     margin-left: -14px;
     margin-right: -10px;
     width: calc(100% + 24px);
+    background: transparent;
 }
 
 @media(max-width:540px) {
