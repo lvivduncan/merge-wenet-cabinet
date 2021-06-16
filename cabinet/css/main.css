@@ -64,6 +64,11 @@
     display: block;
 }
 
+/* схований контент в дескріпшені */
+#cabinet .block .description span{
+    display: none;
+}
+
 /* підзаголовок */
 .block h2{
     position: relative;
