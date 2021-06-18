@@ -232,11 +232,11 @@ ul.user-data [data-block="deposit"]{
     width: calc(100% + 24px);
 }
 
-/* @media(max-width:540px) {
+@media(max-width:540px) {
     #cabinet main #password-area input{
         margin: 0;
     }    
-} */
+}
 
 #cabinet main #password-area-button{
     width: 24px;
