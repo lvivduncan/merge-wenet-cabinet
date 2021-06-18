@@ -226,6 +226,10 @@ ul.user-data [data-block="deposit"]{
 
     /* width: 100%; */
     /* margin: 0; */
+    margin: 0;
+    margin-left: -14px;
+    margin-right: -10px;
+    width: calc(100% + 24px);
 }
 
 /* @media(max-width:540px) {
