@@ -26,6 +26,7 @@
     font-size: 22px;
     width: 1170px;
     margin: auto;
+    padding: 0 45px;
 }
 
 @media(max-width:1200px) {
