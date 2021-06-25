@@ -84,7 +84,8 @@
 }
 
 /* current */
-#top-menu li.active a{
+#top-menu li.active a,
+#top-menu li a.active{
     color: var(--cyan);
 }
 

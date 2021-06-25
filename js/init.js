@@ -785,4 +785,13 @@ document.getElementById('auth-form') && document.getElementById('auth-form').add
 }
  */
 
+// hightlight menu link 
+// const nav = navigator;
+{
+    const url = client.url;
+    const location = location.href;
+
+    console.log(url,location)
+}
+
 // end
