@@ -249,7 +249,10 @@
     color: var(--gray-dark);
 }
 
-
+.status-stoped #cabinet-main h2 span svg
+{
+    fill: var(--gray-dark);
+}
 
 
 
