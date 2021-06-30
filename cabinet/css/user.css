@@ -256,7 +256,7 @@
 
 .status-stoped .block h2.green::before
 {
-    background: var(--gray-dark);
+    background: var(--gray);
 }
 
 
