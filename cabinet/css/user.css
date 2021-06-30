@@ -242,9 +242,10 @@
 }
 
 /* сірий колір для контенту  */
-.status-stoped #cabinet-main main h1,
-.status-stoped #cabinet-main main h2 span, 
-.status-stoped #cabinet-main .block :not(.notice) .description {
+.status-stoped #cabinet-main h1,
+.status-stoped #cabinet-main h2 span, 
+.status-stoped #cabinet-main :not(.notice) .description 
+{
     color: var(--gray-dark);
 }
 
