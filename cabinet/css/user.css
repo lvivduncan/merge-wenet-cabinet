@@ -236,13 +236,14 @@
 .status-stoped #cabinet-main input[type="checkbox"],
 .status-stoped #cabinet-main .edit,
 .status-stoped #cabinet-main :not(.notice) .collapse,
-.status-stoped #cabinet-main .add-code
+.status-stoped #cabinet-main .add-code,
+.status-stoped #cabinet-main [data-key="freeze"] .collapse
 {
     pointer-events: none;
 }
 
 /* not */
-.status-stoped #cabinet-main [data-key="freeze"] .collapse
+/* .status-stoped #cabinet-main [data-key="freeze"] .collapse
 {
     pointer-events: all;
 }
@@ -250,7 +251,7 @@
 .status-stoped #cabinet-main [data-key]:not([data-key="freeze"]) .collapse
 {
     pointer-events: visible;
-}
+} */
 
 /* сірий колір для контенту  */
 .status-stoped #cabinet-main h1,
