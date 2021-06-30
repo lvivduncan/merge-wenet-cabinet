@@ -230,15 +230,23 @@
 }
 
 
+
+
 /* відключені кнопки */
 .status-stoped #cabinet-main input[type="checkbox"],
 .status-stoped #cabinet-main .edit,
 .status-stoped #cabinet-main :not(.notice) .collapse,
-.status-stoped #cabinet-main .add-code{
+.status-stoped #cabinet-main .add-code
+{
     pointer-events: none;
 }
 
-
+/* сірий колір для контенту  */
+.status-stoped #cabinet main h1,
+.status-stoped #cabinet main h2 span, 
+.status-stoped #cabinet .block :not(.notice) .description {
+    color: var(--gray-dark);
+}
 
 
 
