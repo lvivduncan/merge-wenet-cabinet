@@ -247,9 +247,9 @@
     pointer-events: all;
 }
 
-.status-stoped #cabinet-main [data-key]:not([data-key="freeze"])
+.status-stoped #cabinet-main [data-key]:not([data-key="freeze"]) .collapse
 {
-    color: red;
+    pointer-events: visible;
 }
 
 /* сірий колір для контенту  */
