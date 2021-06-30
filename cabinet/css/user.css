@@ -241,19 +241,27 @@
     pointer-events: none;
 }
 
-/* test */
+/* not */
 .status-stoped #cabinet-main [data-key="freeze"] .collapse
 {
     pointer-events: all;
 }
 
+.status-stoped #cabinet-main [data-key]:not([data-key="freeze"])
+{
+    color: red;
+}
+
 /* сірий колір для контенту  */
 .status-stoped #cabinet-main h1,
 .status-stoped #cabinet-main h2 span, 
-.status-stoped #cabinet-main :not(.notice) .description, 
-.status-stoped #cabinet-main :not([data-key="freeze"]) .description 
+.status-stoped #cabinet-main :not(.notice) .description
 {
     color: var(--gray-dark);
+}
+
+.status-stoped #cabinet-main [data-key="freeze"] .description{
+
 }
 
 .status-stoped #cabinet-main h2 span svg
@@ -272,16 +280,26 @@
 }
 
 
-.status-stoped :not(.notice) .collapse,
-.status-stoped :not([data-key="freeze"]) .collapse
+.status-stoped :not(.notice) .collapse
 {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e5e5e5'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
 }
 
-.status-stoped :not(.notice) .collapse.collapsed,
-.status-stoped :not([data-key="freeze"]) .collapse.collapsed
+/* not */
+.status-stoped [data-key="freeze"] .collapse
+{
+
+}
+
+.status-stoped :not(.notice) .collapse.collapsed
 {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e5e5e5'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+}
+
+/* not */
+.status-stoped [data-key="freeze"] .collapse.collapsed
+{
+
 }
 
 .status-stoped #add-device button
