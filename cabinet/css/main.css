@@ -137,6 +137,15 @@
     align-items: center;
 }
 
+/* форма заблокованого профіля */
+#cabinet main p.form-blocked{
+    margin: 20px;
+}
+
+#cabinet main p.form-blocked span{
+    color: var(--gray-dark);
+}
+
 /* описи ліво/право */
 ul.user-data{
     display: block;
@@ -506,7 +515,8 @@ button:hover{
 /* якщо батон у блоці "notice", то тоді кнопка виглядає, як лінк! */
 .notice form{
     display: block;
-    margin: 0 0 0 20px;
+    /* margin: 0 0 0 20px; */
+    margin: 20px 0 0;
 }
 
 .notice button {

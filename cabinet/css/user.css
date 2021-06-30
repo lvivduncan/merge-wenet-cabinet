@@ -230,6 +230,22 @@
 }
 
 
+/* відключені кнопки */
+.status-stoped #cabinet-main input[type="checkbox"],
+.status-stoped #cabinet-main .edit,
+.status-stoped #cabinet-main :not(.notice) .collapse,
+.status-stoped #cabinet-main .add-code{
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
 
 /*////////
 екстра-дні .status-extra

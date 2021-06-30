@@ -71,3 +71,9 @@ a.icon-link svg{
     height: 22px;
     cursor: pointer;
 }
+
+/* для кнопки форми */
+button.icon-link{
+    margin: 0 0 0 auto;
+    width: 22px;
+}
