@@ -333,9 +333,13 @@ tbody tr:first-child {
         content: attr(data-label);
         color: var(--gray);
 
-        /* 5-07-2021 */
+    }
+    
+    /* 5-07-2021 */
+    .history-friend td[data-label]{
         text-align: right;
     }
+
 
     .history-friend tbody tr{
         border: none;
