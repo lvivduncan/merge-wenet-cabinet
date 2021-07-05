@@ -136,7 +136,8 @@ tbody tr:first-child {
         justify-content: space-between;
 
         /* 5-07-2021 */
-        text-align: right;
+        text-align: right!important;
+        gap: 5px;
     }
 
     .history-pay td::before {
@@ -148,6 +149,7 @@ tbody tr:first-child {
 
         /* 5-07-2021 */
         text-align: left;
+        white-space: nowrap;
     }
 
     .history-pay td:last-child {
@@ -264,9 +266,6 @@ tbody tr:first-child {
         /* color: var(--gray); */
         color: var(--gray-dark);
 
-        /* 5-07-2021 */
-        white-space: nowrap;
-        padding-right: 5px;
     }
 
     .history-connect tbody tr{
