@@ -1,0 +1,9 @@
+
+/* ховаємо */
+[data-status],
+[data-online],
+[data-update],
+[data-password],
+[data-online]{
+    display: none;
+}
