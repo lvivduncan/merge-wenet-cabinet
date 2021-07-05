@@ -536,6 +536,11 @@ button:hover{
     text-decoration: none;
 }
 
+/* 5-07-2021 | сповішення */
+.ajax-form-submit{
+    margin-left: 20px;
+}
+
 
 /* header message */
 /* дві кнопки перемикання чекбоксів */
