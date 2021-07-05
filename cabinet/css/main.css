@@ -601,7 +601,10 @@ button:hover{
 
 /* додати пристрій */
 #add-device{
-    color: var(--gray);
+    /* color: var(--gray); */
+
+    /* 5-07-2021 */
+    color: var(--gray-dark);
     border-top: 1px solid var(--gray-light);
     display: list-item;
     min-height: auto;
