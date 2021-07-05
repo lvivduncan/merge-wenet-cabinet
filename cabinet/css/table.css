@@ -257,6 +257,10 @@ tbody tr:first-child {
         content: attr(data-label);
         /* color: var(--gray); */
         color: var(--gray-dark);
+
+        /* 5-07-2021 */
+        white-space: nowrap;
+        padding-right: 5px;
     }
 
     .history-connect tbody tr{
@@ -328,6 +332,9 @@ tbody tr:first-child {
     .history-friend td::before {
         content: attr(data-label);
         color: var(--gray);
+
+        /* 5-07-2021 */
+        text-align: right;
     }
 
     .history-friend tbody tr{
