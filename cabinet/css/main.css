@@ -537,7 +537,7 @@ button:hover{
 }
 
 /* 5-07-2021 | сповішення */
-.ajax-form-submit{
+.notice button.ajax-form-submit{
     margin-left: 20px;
 }
 
