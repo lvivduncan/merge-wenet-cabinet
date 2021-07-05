@@ -634,12 +634,14 @@ ol.user-data{
 
 /* блоки, які показуються після кліку */
 li.insert{
-    color: var(--gray);
+    /* color: var(--gray); */
     border-top: 1px solid var(--gray-light);
     display: list-item;
     min-height: auto;
-
     margin: 0 0 0 15px;
+
+    /* 5-07-2021 */
+    color: var(--gray-dark);
 }
 
 li.insert p{
