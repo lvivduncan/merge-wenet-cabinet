@@ -56,7 +56,8 @@
 #tv-head.sticky {
     width: 1170px;
     position: sticky;
-    top: 70px;
+    /* top: 70px; */
+    top: 140px;
     left: 50%;
     margin-left: -585px;
     background: var(--white-light);
