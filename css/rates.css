@@ -152,7 +152,8 @@
     top: 0;
     left: 0;
     padding: 10px;
-    background: var(--red);
+    /* background: var(--red); */
+    background: #b31414;
     color: var(--white-light);
     font-weight: 500;
     transform: rotate(-45deg) translate(-33px, -45px);
